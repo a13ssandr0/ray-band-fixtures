@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.5</Version>
+  <Author>Alessandro Campolo</Author>
+ </Creator>
+ <Manufacturer>Eurolite</Manufacturer>
+ <Model>LED CBB-4 RGB 4x15W Bar</Model>
+ <Type>LED Bar (Beams)</Type>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Channel Name="Dimmer" Preset="IntensityDimmer"/>
+ <Channel Name="STL / Strobe">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="0">No function</Capability>
+  <Capability Min="1" Max="5">Sound Control</Capability>
+  <Capability Min="11" Max="255">Strobe (increasing speed)</Capability>
+ </Channel>
+ <Channel Name="Red 1" Preset="IntensityRed"/>
+ <Channel Name="Red 2" Preset="IntensityRed"/>
+ <Channel Name="Red 3" Preset="IntensityRed"/>
+ <Channel Name="Red 4" Preset="IntensityRed"/>
+ <Channel Name="Green 1" Preset="IntensityGreen"/>
+ <Channel Name="Green 2" Preset="IntensityGreen"/>
+ <Channel Name="Green 3" Preset="IntensityGreen"/>
+ <Channel Name="Green 4" Preset="IntensityGreen"/>
+ <Channel Name="Blue 1" Preset="IntensityBlue"/>
+ <Channel Name="Blue 2" Preset="IntensityBlue"/>
+ <Channel Name="Blue 3" Preset="IntensityBlue"/>
+ <Channel Name="Blue 4" Preset="IntensityBlue"/>
+ <Channel Name="Strobe">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="9">No function</Capability>
+  <Capability Min="10" Max="255" Preset="StrobeSlowToFast">Strobe speed</Capability>
+ </Channel>
+ <Channel Name="Color Presets">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="9" Preset="ColorMacro" Res1="#000000">No function</Capability>
+  <Capability Min="10" Max="19" Preset="ColorMacro" Res1="#ff0000">Red</Capability>
+  <Capability Min="20" Max="29" Preset="ColorMacro" Res1="#00ff00">Green</Capability>
+  <Capability Min="30" Max="39" Preset="ColorMacro" Res1="#0000ff">Blue</Capability>
+  <Capability Min="40" Max="49" Preset="ColorMacro" Res1="#FFFF00">Yellow</Capability>
+  <Capability Min="50" Max="59" Preset="ColorMacro" Res1="#FF00FF">Magenta</Capability>
+  <Capability Min="60" Max="69" Preset="ColorMacro" Res1="#00FFFF">Cyan</Capability>
+  <Capability Min="70" Max="79" Preset="ColorMacro" Res1="#FF8C00">Dark orange</Capability>
+  <Capability Min="80" Max="89" Preset="ColorMacro" Res1="#9ACD32">Green yellow</Capability>
+  <Capability Min="90" Max="99" Preset="ColorMacro" Res1="#FA8072">Salmon</Capability>
+  <Capability Min="100" Max="109" Preset="ColorMacro" Res1="#30D5C8">Turquoise</Capability>
+  <Capability Min="110" Max="119" Preset="ColorMacro" Res1="#90ee90">Light green</Capability>
+  <Capability Min="120" Max="129" Preset="ColorMacro" Res1="#FFA500">Orange</Capability>
+  <Capability Min="130" Max="139" Preset="ColorMacro" Res1="#e4d96f">Straw</Capability>
+  <Capability Min="140" Max="149" Preset="ColorMacro" Res1="#E6E6FA">Lavender</Capability>
+  <Capability Min="150" Max="159" Preset="ColorMacro" Res1="#ADD8E6">Light blue</Capability>
+  <Capability Min="160" Max="169" Preset="ColorMacro" Res1="#00008B">Dark blue</Capability>
+  <Capability Min="170" Max="179" Preset="ColorMacro" Res1="#FFC0CB">Pink</Capability>
+  <Capability Min="180" Max="189" Preset="ColorMacro" Res1="#F4FDFF">Cool White</Capability>
+  <Capability Min="190" Max="255" Preset="ColorMacro" Res1="#f3e7d3">Warm white</Capability>
+ </Channel>
+ <Channel Name="Internal Programs / STL">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="9">No function</Capability>
+  <Capability Min="10" Max="29" Preset="ColorWheelIndex">Program 1</Capability>
+  <Capability Min="30" Max="49" Preset="ColorWheelIndex">Program 2</Capability>
+  <Capability Min="50" Max="69" Preset="ColorWheelIndex">Program 3</Capability>
+  <Capability Min="70" Max="89" Preset="ColorWheelIndex">Program 4</Capability>
+  <Capability Min="90" Max="109" Preset="ColorWheelIndex">Program 5</Capability>
+  <Capability Min="110" Max="129" Preset="ColorWheelIndex">Program 6</Capability>
+  <Capability Min="130" Max="149" Preset="ColorWheelIndex">Program 7</Capability>
+  <Capability Min="150" Max="169" Preset="ColorWheelIndex">Program 8</Capability>
+  <Capability Min="170" Max="189" Preset="ColorWheelIndex">Program 9</Capability>
+  <Capability Min="190" Max="209" Preset="ColorWheelIndex">Program 10</Capability>
+  <Capability Min="210" Max="229" Preset="ColorWheelIndex">Program 11</Capability>
+  <Capability Min="230" Max="249" Preset="ColorWheelIndex">Automatic mode</Capability>
+  <Capability Min="250" Max="255" Preset="ColorWheelIndex">STL</Capability>
+ </Channel>
+ <Channel Name="Automatic mode / STL">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="9">No function</Capability>
+  <Capability Min="10" Max="69" Preset="SlowToFast">Automatic color fade with increasing speed</Capability>
+  <Capability Min="70" Max="129" Preset="SlowToFast">Automatic color change with increasing speed</Capability>
+  <Capability Min="130" Max="189" Preset="SlowToFast">Sound-controlled color fade with increasing speed</Capability>
+  <Capability Min="190" Max="255" Preset="SlowToFast">Sound-controlled color change with increasing speed</Capability>
+ </Channel>
+ <Channel Name="No function" Preset="NoFunction"/>
+ <Channel Name="No function 2" Preset="NoFunction"/>
+ <Channel Name="No function 3" Preset="NoFunction"/>
+ <Mode Name="3-Channel">
+  <Channel Number="0">Red</Channel>
+  <Channel Number="1">Green</Channel>
+  <Channel Number="2">Blue</Channel>
+ </Mode>
+ <Mode Name="12-Channel">
+  <Channel Number="0">Red 1</Channel>
+  <Channel Number="1">Green 1</Channel>
+  <Channel Number="2">Blue 1</Channel>
+  <Channel Number="3">Red 2</Channel>
+  <Channel Number="4">Green 2</Channel>
+  <Channel Number="5">Blue 2</Channel>
+  <Channel Number="6">Red 3</Channel>
+  <Channel Number="7">Green 3</Channel>
+  <Channel Number="8">Blue 3</Channel>
+  <Channel Number="9">Red 4</Channel>
+  <Channel Number="10">Green 4</Channel>
+  <Channel Number="11">Blue 4</Channel>
+  <Head>
+   <Channel>2</Channel>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+  </Head>
+  <Head>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+  </Head>
+  <Head>
+   <Channel>8</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+  </Head>
+  <Head>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="5-Channel">
+  <Channel Number="0">Red</Channel>
+  <Channel Number="1">Green</Channel>
+  <Channel Number="2">Blue</Channel>
+  <Channel Number="3">Dimmer</Channel>
+  <Channel Number="4">STL / Strobe</Channel>
+ </Mode>
+ <Mode Name="15-Channel">
+  <Channel Number="0">Internal Programs / STL</Channel>
+  <Channel Number="1">Dimmer</Channel>
+  <Channel Number="2">Strobe</Channel>
+  <Channel Number="3">Red 1</Channel>
+  <Channel Number="4">Green 1</Channel>
+  <Channel Number="5">Blue 1</Channel>
+  <Channel Number="6">Red 2</Channel>
+  <Channel Number="7">Green 2</Channel>
+  <Channel Number="8">Blue 2</Channel>
+  <Channel Number="9">Red 3</Channel>
+  <Channel Number="10">Green 3</Channel>
+  <Channel Number="11">Blue 3</Channel>
+  <Channel Number="12">Red 4</Channel>
+  <Channel Number="13">Green 4</Channel>
+  <Channel Number="14">Blue 4</Channel>
+  <Head>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+  </Head>
+  <Head>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+   <Channel>8</Channel>
+  </Head>
+  <Head>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+  </Head>
+  <Head>
+   <Channel>12</Channel>
+   <Channel>13</Channel>
+   <Channel>14</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="19-Channel">
+  <Channel Number="0">Dimmer</Channel>
+  <Channel Number="1">Strobe</Channel>
+  <Channel Number="2">Red 1</Channel>
+  <Channel Number="3">Green 1</Channel>
+  <Channel Number="4">Blue 1</Channel>
+  <Channel Number="5">Red 2</Channel>
+  <Channel Number="6">Green 2</Channel>
+  <Channel Number="7">Blue 2</Channel>
+  <Channel Number="8">Red 3</Channel>
+  <Channel Number="9">Green 3</Channel>
+  <Channel Number="10">Blue 3</Channel>
+  <Channel Number="11">Red 4</Channel>
+  <Channel Number="12">Green 4</Channel>
+  <Channel Number="13">Blue 4</Channel>
+  <Channel Number="14">Color Presets</Channel>
+  <Channel Number="15">No function</Channel>
+  <Channel Number="16">No function 2</Channel>
+  <Channel Number="17">No function 3</Channel>
+  <Channel Number="18">Automatic mode / STL</Channel>
+  <Head>
+   <Channel>2</Channel>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+  </Head>
+  <Head>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+  </Head>
+  <Head>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+  </Head>
+  <Head>
+   <Channel>11</Channel>
+   <Channel>12</Channel>
+   <Channel>13</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="3.7" Width="460" Height="160" Depth="160"/>
+  <Lens Name="Other" DegreesMin="39" DegreesMax="39"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Layout Width="4" Height="1"/>
+  <Technical PowerConsumption="70" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

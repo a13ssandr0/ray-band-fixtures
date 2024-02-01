@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.7</Version>
+  <Author>George</Author>
+ </Creator>
+ <Manufacturer>Ayra</Manufacturer>
+ <Model>ComPar KIT 3</Model>
+ <Type>LED Bar (Beams)</Type>
+ <Channel Name="Red 1" Preset="IntensityRed"/>
+ <Channel Name="Green 1" Preset="IntensityGreen"/>
+ <Channel Name="Blue 1" Preset="IntensityBlue"/>
+ <Channel Name="Red 2" Preset="IntensityRed"/>
+ <Channel Name="Green 2" Preset="IntensityGreen"/>
+ <Channel Name="Blue 2" Preset="IntensityBlue"/>
+ <Channel Name="Red 3" Preset="IntensityRed"/>
+ <Channel Name="Green 3" Preset="IntensityGreen"/>
+ <Channel Name="Blue 3" Preset="IntensityBlue"/>
+ <Channel Name="Red 4" Preset="IntensityRed"/>
+ <Channel Name="Green 4" Preset="IntensityGreen"/>
+ <Channel Name="Blue 4" Preset="IntensityBlue"/>
+ <Channel Name="Dimmer" Preset="IntensityDimmer"/>
+ <Channel Name="STL/STROB">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="7">No Function</Capability>
+  <Capability Min="8" Max="247">Store slow to fast</Capability>
+  <Capability Min="248" Max="255">Sound Strobe</Capability>
+ </Channel>
+ <Channel Name="Colour Chase">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="7">Manual</Capability>
+  <Capability Min="8" Max="22">Colour chase 1</Capability>
+  <Capability Min="23" Max="37">Colour chase 2</Capability>
+  <Capability Min="38" Max="52">Colour chase 3</Capability>
+  <Capability Min="53" Max="67">Colour chase 4</Capability>
+  <Capability Min="68" Max="82">Colour chase 5</Capability>
+  <Capability Min="83" Max="97">Colour chase 6</Capability>
+  <Capability Min="98" Max="112">Colour chase 7</Capability>
+  <Capability Min="113" Max="127">Colour chase 8</Capability>
+  <Capability Min="128" Max="142">Colour chase 9</Capability>
+  <Capability Min="143" Max="157">Colour chase 10</Capability>
+  <Capability Min="158" Max="172">Colour chase 11</Capability>
+  <Capability Min="173" Max="187">Colour chase 12</Capability>
+  <Capability Min="188" Max="202">Colour chase 13</Capability>
+  <Capability Min="203" Max="217">Colour chase 14</Capability>
+  <Capability Min="218" Max="232">Colour chase 15</Capability>
+  <Capability Min="233" Max="247">Colour chase 16</Capability>
+  <Capability Min="248" Max="255">Stand-alone</Capability>
+ </Channel>
+ <Channel Name="IPeed">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="7">Hold</Capability>
+  <Capability Min="8" Max="255">Speed Slow to Fast</Capability>
+ </Channel>
+ <Channel Name="Chase">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="7">Blackout</Capability>
+  <Capability Min="8" Max="37">Show 01</Capability>
+  <Capability Min="38" Max="67">Show 02</Capability>
+  <Capability Min="68" Max="97">Show 03</Capability>
+  <Capability Min="98" Max="127">Show 04</Capability>
+  <Capability Min="128" Max="157">Show 05</Capability>
+  <Capability Min="158" Max="187">Show 06</Capability>
+  <Capability Min="188" Max="217">Show 07</Capability>
+  <Capability Min="218" Max="247">Show 01</Capability>
+  <Capability Min="248" Max="255">Random Show 01-08</Capability>
+ </Channel>
+ <Mode Name="1-Channel">
+  <Channel Number="0">Chase</Channel>
+ </Mode>
+ <Mode Name="3-Channel">
+  <Channel Number="0">Red 1</Channel>
+  <Channel Number="1">Green 1</Channel>
+  <Channel Number="2">Blue 1</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="7-Channel">
+  <Channel Number="0">Red 1</Channel>
+  <Channel Number="1">Green 1</Channel>
+  <Channel Number="2">Blue 1</Channel>
+  <Channel Number="3">Dimmer</Channel>
+  <Channel Number="4">STL/STROB</Channel>
+  <Channel Number="5">Colour Chase</Channel>
+  <Channel Number="6">IPeed</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="12-Channel">
+  <Channel Number="0">Red 1</Channel>
+  <Channel Number="1">Green 1</Channel>
+  <Channel Number="2">Blue 1</Channel>
+  <Channel Number="3">Red 2</Channel>
+  <Channel Number="4">Green 2</Channel>
+  <Channel Number="5">Blue 2</Channel>
+  <Channel Number="6">Red 3</Channel>
+  <Channel Number="7">Green 3</Channel>
+  <Channel Number="8">Blue 3</Channel>
+  <Channel Number="9">Red 4</Channel>
+  <Channel Number="10">Green 4</Channel>
+  <Channel Number="11">Blue 4</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>2</Channel>
+   <Channel>1</Channel>
+  </Head>
+  <Head>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+  </Head>
+  <Head>
+   <Channel>6</Channel>
+   <Channel>8</Channel>
+   <Channel>7</Channel>
+  </Head>
+  <Head>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+  </Head>
+ </Mode>
+ <Mode Name="16-Channel">
+  <Channel Number="0">Red 1</Channel>
+  <Channel Number="1">Green 1</Channel>
+  <Channel Number="2">Blue 1</Channel>
+  <Channel Number="3">Green 2</Channel>
+  <Channel Number="4">Red 2</Channel>
+  <Channel Number="5">Blue 2</Channel>
+  <Channel Number="6">Red 3</Channel>
+  <Channel Number="7">Green 3</Channel>
+  <Channel Number="8">Blue 3</Channel>
+  <Channel Number="9">Red 4</Channel>
+  <Channel Number="10">Green 4</Channel>
+  <Channel Number="11">Blue 4</Channel>
+  <Channel Number="12">Colour Chase</Channel>
+  <Channel Number="13">Dimmer</Channel>
+  <Channel Number="14">STL/STROB</Channel>
+  <Channel Number="15">IPeed</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>1</Channel>
+   <Channel>2</Channel>
+  </Head>
+  <Head>
+   <Channel>3</Channel>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+  </Head>
+  <Head>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+   <Channel>8</Channel>
+  </Head>
+  <Head>
+   <Channel>9</Channel>
+   <Channel>10</Channel>
+   <Channel>11</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="1000" Height="230" Depth="95"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Layout Width="4" Height="1"/>
+  <Technical PowerConsumption="161" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
