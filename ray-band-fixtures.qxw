@@ -10,7 +10,9 @@
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
     <Input Plugin="MIDI" UID="Mixer luci MIDI 1" Line="1"/>
-    <Output Plugin="DMX USB" UID="None" Line="0"/>
+    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AB0OXHHG)" Line="0">
+     <PluginParameters UniverseChannels="353"/>
+    </Output>
     <Feedback Plugin="MIDI" UID="Mixer luci MIDI 1" Line="1"/>
    </Universe>
   </InputOutputMap>
@@ -24,8 +26,8 @@
    <Address>29</Address>
    <Channels>16</Channels>
    <ExcludeFade>0,1,2,3,4,5,6,13,14,15</ExcludeFade>
-   <Modifier Channel="6" Name="Custom wash shutter"/>
    <Modifier Channel="4" Name="Always Off"/>
+   <Modifier Channel="6" Name="Custom wash shutter"/>
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
@@ -34,7 +36,7 @@
    <ID>1</ID>
    <Name>Generic Smoke</Name>
    <Universe>0</Universe>
-   <Address>299</Address>
+   <Address>249</Address>
    <Channels>2</Channels>
   </Fixture>
   <Fixture>
@@ -47,8 +49,8 @@
    <Address>109</Address>
    <Channels>16</Channels>
    <ExcludeFade>0,1,2,3,4,5,6,13,14,15</ExcludeFade>
-   <Modifier Channel="6" Name="Custom wash shutter"/>
    <Modifier Channel="4" Name="Always Off"/>
+   <Modifier Channel="6" Name="Custom wash shutter"/>
   </Fixture>
   <Fixture>
    <Manufacturer>Stairville</Manufacturer>
@@ -60,7 +62,6 @@
    <Address>0</Address>
    <Channels>10</Channels>
    <ExcludeFade>6,7,8,9</ExcludeFade>
-   <Modifier Channel="0" Name="Always Full"/>
    <Modifier Channel="1" Name="Always Full"/>
   </Fixture>
   <Fixture>
@@ -73,7 +74,6 @@
    <Address>10</Address>
    <Channels>19</Channels>
    <ExcludeFade>14,15,16,17,18</ExcludeFade>
-   <Modifier Channel="0" Name="Always Full"/>
    <Modifier Channel="1" Name="Always Off"/>
   </Fixture>
   <Fixture>
@@ -107,7 +107,7 @@
    <Model>ComPar KIT 3</Model>
    <Mode>12-Channel</Mode>
    <ID>7</ID>
-   <Name>ComPar KIT 3</Name>
+   <Name>ComPar KIT 3 (SX)</Name>
    <Universe>0</Universe>
    <Address>199</Address>
    <Channels>12</Channels>
@@ -117,7 +117,7 @@
    <Model>ComPar KIT 3</Model>
    <Mode>12-Channel</Mode>
    <ID>8</ID>
-   <Name>ComPar KIT 3</Name>
+   <Name>ComPar KIT 3 (DX)</Name>
    <Universe>0</Universe>
    <Address>211</Address>
    <Channels>12</Channels>
@@ -132,7 +132,6 @@
    <Address>58</Address>
    <Channels>19</Channels>
    <ExcludeFade>14,15,16,17,18</ExcludeFade>
-   <Modifier Channel="0" Name="Always Full"/>
    <Modifier Channel="1" Name="Always Off"/>
   </Fixture>
   <Fixture>
@@ -145,7 +144,6 @@
    <Address>77</Address>
    <Channels>19</Channels>
    <ExcludeFade>14,15,16,17,18</ExcludeFade>
-   <Modifier Channel="0" Name="Always Full"/>
    <Modifier Channel="1" Name="Always Off"/>
   </Fixture>
   <Fixture>
@@ -158,7 +156,6 @@
    <Address>125</Address>
    <Channels>19</Channels>
    <ExcludeFade>14,15,16,17,18</ExcludeFade>
-   <Modifier Channel="0" Name="Always Full"/>
    <Modifier Channel="1" Name="Always Off"/>
   </Fixture>
   <Fixture>
@@ -171,8 +168,89 @@
    <Address>144</Address>
    <Channels>10</Channels>
    <ExcludeFade>6,7,8,9</ExcludeFade>
-   <Modifier Channel="0" Name="Always Full"/>
    <Modifier Channel="1" Name="Always Full"/>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>8 Channel</Mode>
+   <ID>13</ID>
+   <Name>Accecatore (DX)</Name>
+   <Universe>0</Universe>
+   <Address>299</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Betopper</Manufacturer>
+   <Model>LC200W-H</Model>
+   <Mode>8CH</Mode>
+   <ID>14</ID>
+   <Name>LC200W-H</Name>
+   <Universe>0</Universe>
+   <Address>311</Address>
+   <Channels>7</Channels>
+   <Modifier Channel="0" Name="Always Full"/>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Betopper</Manufacturer>
+   <Model>LC200W-H</Model>
+   <Mode>8CH</Mode>
+   <ID>15</ID>
+   <Name>LC200W-H</Name>
+   <Universe>0</Universe>
+   <Address>334</Address>
+   <Channels>7</Channels>
+   <Modifier Channel="0" Name="Always Full"/>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>16</ID>
+   <Name>LC002 (DX)</Name>
+   <Universe>0</Universe>
+   <Address>307</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>8 Channel</Mode>
+   <ID>18</ID>
+   <Name>Accecatore (CDX)</Name>
+   <Universe>0</Universe>
+   <Address>318</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>8 Channel</Mode>
+   <ID>19</ID>
+   <Name>Accecatore (CSX)</Name>
+   <Universe>0</Universe>
+   <Address>326</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>4 Channel</Mode>
+   <ID>21</ID>
+   <Name>LC002 (SX)</Name>
+   <Universe>0</Universe>
+   <Address>341</Address>
+   <Channels>4</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>8 Channel</Mode>
+   <ID>22</ID>
+   <Name>Accecatore (SX)</Name>
+   <Universe>0</Universe>
+   <Address>345</Address>
+   <Channels>8</Channels>
   </Fixture>
   <FixtureGroup ID="0">
    <Name>Ayra</Name>
@@ -209,10 +287,12 @@
    <Head X="17" Y="0" Fixture="4">2</Head>
    <Head X="18" Y="0" Fixture="4">3</Head>
    <Head X="19" Y="0" Fixture="3">0</Head>
+   <Head X="0" Y="1" Fixture="14">0</Head>
    <Head X="1" Y="1" Fixture="7">0</Head>
    <Head X="2" Y="1" Fixture="7">1</Head>
    <Head X="3" Y="1" Fixture="7">2</Head>
    <Head X="4" Y="1" Fixture="7">3</Head>
+   <Head X="5" Y="1" Fixture="15">0</Head>
    <Head X="15" Y="1" Fixture="8">0</Head>
    <Head X="16" Y="1" Fixture="8">1</Head>
    <Head X="17" Y="1" Fixture="8">2</Head>
@@ -229,16 +309,16 @@
   <Function ID="1" Type="Scene" Name="Bianco">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>0,255,1,255,2,255,3,255</ChannelGroupsVal>
-   <FixtureVal ID="0">7,255,8,255,9,255,10,255</FixtureVal>
-   <FixtureVal ID="2">7,255,8,255,9,255,10,255</FixtureVal>
-   <FixtureVal ID="3">2,255,3,255,4,255,5,255</FixtureVal>
-   <FixtureVal ID="4">2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
+   <FixtureVal ID="0">5,255,7,255,8,255,9,255,10,255</FixtureVal>
+   <FixtureVal ID="2">5,255,7,255,8,255,9,255,10,255</FixtureVal>
+   <FixtureVal ID="3">0,255,2,255,3,255,4,255,5,255</FixtureVal>
+   <FixtureVal ID="4">0,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
    <FixtureVal ID="7">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255</FixtureVal>
    <FixtureVal ID="8">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255</FixtureVal>
-   <FixtureVal ID="9">2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
-   <FixtureVal ID="10">2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
-   <FixtureVal ID="11">2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
-   <FixtureVal ID="12">2,255,3,255,4,255,5,255</FixtureVal>
+   <FixtureVal ID="9">0,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
+   <FixtureVal ID="10">0,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
+   <FixtureVal ID="11">0,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
+   <FixtureVal ID="12">0,255,2,255,3,255,4,255,5,255</FixtureVal>
   </Function>
   <Function ID="2" Type="RGBMatrix" Name="Astratto lento">
    <Speed FadeIn="219" FadeOut="219" Duration="50"/>
@@ -306,7 +386,7 @@
     <StartOffset>45</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="3716"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="102"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -356,7 +436,7 @@
     <StartOffset>45</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="3716"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="102"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Square</Algorithm>
@@ -406,7 +486,7 @@
     <StartOffset>45</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="3716"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="102"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -585,6 +665,24 @@
    <Property Name="presetIndex" Value="Ocean"/>
    <Property Name="presetSize" Value="12"/>
   </Function>
+  <Function ID="15" Type="Scene" Name="Bianco caldo">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="18">0,255,4,255,6,255</FixtureVal>
+   <FixtureVal ID="19">0,255,4,255,6,255</FixtureVal>
+   <FixtureVal ID="13">0,255,4,255,6,255</FixtureVal>
+   <FixtureVal ID="22">0,255,4,255,6,255</FixtureVal>
+   <FixtureVal ID="16">0,255,1,255</FixtureVal>
+   <FixtureVal ID="21">0,255,1,255</FixtureVal>
+  </Function>
+  <Function ID="16" Type="Scene" Name="Bianco naturale">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="18">0,255,5,255,7,255</FixtureVal>
+   <FixtureVal ID="19">0,255,5,255,7,255</FixtureVal>
+   <FixtureVal ID="13">0,255,5,255,7,255</FixtureVal>
+   <FixtureVal ID="22">0,255,5,255,7,255</FixtureVal>
+   <FixtureVal ID="16">0,255,2,255</FixtureVal>
+   <FixtureVal ID="21">0,255,2,255</FixtureVal>
+  </Function>
   <Function ID="17" Type="EFX" Name="Otto">
    <Fixture>
     <ID>0</ID>
@@ -615,7 +713,7 @@
     <StartOffset>45</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="3716"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="102"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Eight</Algorithm>
@@ -665,7 +763,7 @@
     <StartOffset>45</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="3716"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="102"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -685,8 +783,17 @@
     <Phase>0</Phase>
    </Axis>
   </Function>
+  <Function ID="19" Type="RGBMatrix" Name="Nuova Matrice RGB 19">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Stripes</Algorithm>
+   <MonoColor>4294901760</MonoColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>1</FixtureGroup>
+  </Function>
   <Function ID="21" Type="RGBMatrix" Name="Even/Odd" BlendMode="Mask">
-   <Speed FadeIn="2283" FadeOut="2283" Duration="1441"/>
+   <Speed FadeIn="1123" FadeOut="1123" Duration="1191"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <Algorithm Type="Script">Even/Odd</Algorithm>
@@ -816,7 +923,7 @@
    <Property Name="presetIndex" Value="Rainbow"/>
    <Property Name="presetSize" Value="13"/>
   </Function>
-  <Monitor DisplayMode="1" ShowLabels="1">
+  <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,0,50,0,0,0,0,0</Font>
    <ChannelStyle>1</ChannelStyle>
    <ValueStyle>0</ValueStyle>
@@ -1098,7 +1205,7 @@
     <Input Universe="0" Channel="0"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
     <Reset/>
-    <Level LowLimit="0" HighLimit="255" Value="0">
+    <Level LowLimit="0" HighLimit="255" Value="232">
      <Channel Fixture="0">5</Channel>
      <Channel Fixture="2">5</Channel>
      <Channel Fixture="5">7</Channel>
@@ -1166,7 +1273,7 @@
     <Div>
      <Input Universe="0" Channel="37"/>
     </Div>
-    <Time>929</Time>
+    <Time>205</Time>
     <Key>Num+Enter</Key>
     <MultKey>Num++</MultKey>
     <DivKey>Num+-</DivKey>
@@ -1400,7 +1507,7 @@
     </Appearance>
     <Input Universe="0" Channel="1"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="0">
+    <Level LowLimit="0" HighLimit="255" Value="255">
      <Channel Fixture="0">6</Channel>
      <Channel Fixture="2">6</Channel>
      <Channel Fixture="5">6</Channel>
@@ -1421,7 +1528,7 @@
     </Appearance>
     <Input Universe="0" Channel="4"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="Preset" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="4">
+    <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="5">4</Channel>
      <Channel Fixture="6">4</Channel>
     </Level>
@@ -1438,10 +1545,20 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Input Universe="0" Channel="7"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Submaster</SliderMode>
     <Level LowLimit="0" HighLimit="255" Value="255">
+     <Channel Fixture="0">5</Channel>
+     <Channel Fixture="2">5</Channel>
      <Channel Fixture="3">0</Channel>
+     <Channel Fixture="4">0</Channel>
+     <Channel Fixture="5">7</Channel>
+     <Channel Fixture="6">7</Channel>
+     <Channel Fixture="9">0</Channel>
+     <Channel Fixture="10">0</Channel>
+     <Channel Fixture="11">0</Channel>
+     <Channel Fixture="12">0</Channel>
+     <Channel Fixture="14">0</Channel>
+     <Channel Fixture="15">0</Channel>
     </Level>
     <Playback>
      <Function>4294967295</Function>
@@ -1641,7 +1758,7 @@
      <Font>Default</Font>
     </Appearance>
     <Input Universe="0" Channel="45"/>
-    <SpectrumBar Name="#1 (0Hz - 156Hz)" Type="2" MinThreshold="89" MaxThreshold="127" Divisor="1" Index="0" FunctionID="1"/>
+    <SpectrumBar Name="#1 (0Hz - 156Hz)" Type="2" MinThreshold="204" MaxThreshold="211" Divisor="1" Index="0" FunctionID="1"/>
    </AudioTriggers>
    <SpeedDial Caption="Durata Even/Odd (CH6)" ID="17">
     <WindowState Visible="True" X="665" Y="175" Width="135" Height="130"/>
@@ -1656,7 +1773,7 @@
     <AbsoluteValue Minimum="100" Maximum="3000">
      <Input Universe="0" Channel="5"/>
     </AbsoluteValue>
-    <Time>1441</Time>
+    <Time>1191</Time>
     <Function FadeIn="0" FadeOut="0" Duration="6">21</Function>
    </SpeedDial>
    <SpeedDial Caption="Fade Even/Odd (CH7)" ID="35">
@@ -1672,9 +1789,98 @@
     <AbsoluteValue Minimum="100" Maximum="3000">
      <Input Universe="0" Channel="6"/>
     </AbsoluteValue>
-    <Time>2283</Time>
+    <Time>1123</Time>
     <Function FadeIn="6" FadeOut="6" Duration="0">21</Function>
    </SpeedDial>
+   <Button Caption="Bianco caldo" ID="16" Icon="">
+    <WindowState Visible="True" X="510" Y="515" Width="135" Height="80"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="15"/>
+    <Action>Toggle</Action>
+    <Key>1</Key>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Button Caption="Bianco naturale" ID="36" Icon="">
+    <WindowState Visible="True" X="655" Y="515" Width="135" Height="80"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Function ID="16"/>
+    <Action>Toggle</Action>
+    <Key>2</Key>
+    <Intensity Adjust="False">100</Intensity>
+   </Button>
+   <Slider Caption="Caldo" ID="37" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="560" Y="635" Width="60" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Input Universe="0" Channel="0"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <Playback>
+     <Function>15</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="Naturale" ID="38" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="690" Y="635" Width="60" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Input Universe="0" Channel="1"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <Playback>
+     <Function>16</Function>
+    </Playback>
+   </Slider>
+   <Slider Caption="Dimmer" ID="45" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="875" Y="540" Width="65" Height="325"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <Input Universe="0" Channel="7"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="1" HighLimit="255" Value="232">
+     <Channel Fixture="0">5</Channel>
+     <Channel Fixture="2">5</Channel>
+     <Channel Fixture="3">0</Channel>
+     <Channel Fixture="4">0</Channel>
+     <Channel Fixture="5">7</Channel>
+     <Channel Fixture="6">7</Channel>
+     <Channel Fixture="9">0</Channel>
+     <Channel Fixture="10">0</Channel>
+     <Channel Fixture="11">0</Channel>
+     <Channel Fixture="12">0</Channel>
+     <Channel Fixture="14">0</Channel>
+     <Channel Fixture="15">0</Channel>
+    </Level>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
   </Frame>
   <Properties>
    <Size Width="1869" Height="869"/>
