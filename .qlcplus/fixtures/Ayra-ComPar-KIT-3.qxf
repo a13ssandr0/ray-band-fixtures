@@ -69,6 +69,9 @@
  </Channel>
  <Mode Name="1-Channel">
   <Channel Number="0">Chase</Channel>
+  <Head>
+   <Channel>0</Channel>
+  </Head>
  </Mode>
  <Mode Name="3-Channel">
   <Channel Number="0">Red 1</Channel>

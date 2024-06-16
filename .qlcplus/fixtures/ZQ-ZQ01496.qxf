@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.7</Version>
+  <Author>Alessandro Campolo</Author>
+ </Creator>
+ <Manufacturer>ZQ</Manufacturer>
+ <Model>ZQ01496</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Strobe">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="10" Preset="StrobeSlowToFast">Strobe off</Capability>
+  <Capability Min="11" Max="255">Strobe (Slow to fast 1-20Hz)</Capability>
+ </Channel>
+ <Channel Name="Function">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="39">No function</Capability>
+  <Capability Min="40" Max="79">Color jump</Capability>
+  <Capability Min="80" Max="119">Color gradient</Capability>
+  <Capability Min="120" Max="159">Color pulse change</Capability>
+  <Capability Min="160" Max="199">Color mutation</Capability>
+  <Capability Min="200" Max="239">Automatic mode</Capability>
+  <Capability Min="240" Max="255">Sound mode</Capability>
+ </Channel>
+ <Channel Name="Speed/Sensitivity">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Speed/Sensitivity slow to fast</Capability>
+ </Channel>
+ <Channel Name="Warm white 1" Preset="IntensityDimmer"/>
+ <Channel Name="Cold white 1" Preset="IntensityDimmer"/>
+ <Channel Name="Warm white 2" Preset="IntensityDimmer"/>
+ <Channel Name="Cold white 2" Preset="IntensityDimmer"/>
+ <Mode Name="DMX">
+  <Channel Number="0">Master dimmer</Channel>
+  <Channel Number="1">Strobe</Channel>
+  <Channel Number="2">Function</Channel>
+  <Channel Number="3" ActsOn="2">Speed/Sensitivity</Channel>
+  <Channel Number="4">Warm white 1</Channel>
+  <Channel Number="5">Cold white 1</Channel>
+  <Channel Number="6">Warm white 2</Channel>
+  <Channel Number="7">Cold white 2</Channel>
+  <Head>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+  </Head>
+  <Head>
+   <Channel>6</Channel>
+   <Channel>7</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Layout Width="2" Height="1"/>
+  <Technical PowerConsumption="200" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
