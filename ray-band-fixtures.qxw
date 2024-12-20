@@ -9,11 +9,11 @@
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="Mixer luci MIDI 1" Line="1"/>
+    <Input Plugin="MIDI" UID="input" Line="1"/>
     <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AB0OXHHG)" Line="0">
      <PluginParameters UniverseChannels="353"/>
     </Output>
-    <Feedback Plugin="MIDI" UID="Mixer luci MIDI 1" Line="1"/>
+    <Feedback Plugin="MIDI" UID="input" Line="1"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -26,8 +26,8 @@
    <Address>29</Address>
    <Channels>16</Channels>
    <ExcludeFade>0,1,2,3,4,5,6,13,14,15</ExcludeFade>
-   <Modifier Channel="4" Name="Always Off"/>
    <Modifier Channel="6" Name="Custom wash shutter"/>
+   <Modifier Channel="4" Name="Always Off"/>
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
@@ -49,8 +49,8 @@
    <Address>109</Address>
    <Channels>16</Channels>
    <ExcludeFade>0,1,2,3,4,5,6,13,14,15</ExcludeFade>
-   <Modifier Channel="4" Name="Always Off"/>
    <Modifier Channel="6" Name="Custom wash shutter"/>
+   <Modifier Channel="4" Name="Always Off"/>
   </Fixture>
   <Fixture>
    <Manufacturer>Stairville</Manufacturer>
@@ -266,24 +266,24 @@
    <Name>Led americana</Name>
    <Size X="20" Y="2"/>
    <Head X="0" Y="0" Fixture="12">0</Head>
-   <Head X="1" Y="0" Fixture="11">0</Head>
-   <Head X="2" Y="0" Fixture="11">1</Head>
-   <Head X="3" Y="0" Fixture="11">2</Head>
-   <Head X="4" Y="0" Fixture="11">3</Head>
+   <Head X="1" Y="0" Fixture="4">0</Head>
+   <Head X="2" Y="0" Fixture="4">1</Head>
+   <Head X="3" Y="0" Fixture="4">2</Head>
+   <Head X="4" Y="0" Fixture="4">3</Head>
    <Head X="5" Y="0" Fixture="2">0</Head>
-   <Head X="6" Y="0" Fixture="10">0</Head>
-   <Head X="7" Y="0" Fixture="10">1</Head>
-   <Head X="8" Y="0" Fixture="10">2</Head>
-   <Head X="9" Y="0" Fixture="10">3</Head>
-   <Head X="10" Y="0" Fixture="9">0</Head>
-   <Head X="11" Y="0" Fixture="9">1</Head>
-   <Head X="12" Y="0" Fixture="9">2</Head>
-   <Head X="13" Y="0" Fixture="9">3</Head>
+   <Head X="6" Y="0" Fixture="9">0</Head>
+   <Head X="7" Y="0" Fixture="9">1</Head>
+   <Head X="8" Y="0" Fixture="9">2</Head>
+   <Head X="9" Y="0" Fixture="9">3</Head>
+   <Head X="10" Y="0" Fixture="10">0</Head>
+   <Head X="11" Y="0" Fixture="10">1</Head>
+   <Head X="12" Y="0" Fixture="10">2</Head>
+   <Head X="13" Y="0" Fixture="10">3</Head>
    <Head X="14" Y="0" Fixture="0">0</Head>
-   <Head X="15" Y="0" Fixture="4">0</Head>
-   <Head X="16" Y="0" Fixture="4">1</Head>
-   <Head X="17" Y="0" Fixture="4">2</Head>
-   <Head X="18" Y="0" Fixture="4">3</Head>
+   <Head X="15" Y="0" Fixture="11">0</Head>
+   <Head X="16" Y="0" Fixture="11">1</Head>
+   <Head X="17" Y="0" Fixture="11">2</Head>
+   <Head X="18" Y="0" Fixture="11">3</Head>
    <Head X="19" Y="0" Fixture="3">0</Head>
    <Head X="0" Y="1" Fixture="14">0</Head>
    <Head X="1" Y="1" Fixture="7">0</Head>
@@ -335,8 +335,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetIndex" Value="Abstract"/>
    <Property Name="presetSize" Value="8"/>
+   <Property Name="presetIndex" Value="Abstract"/>
   </Function>
   <Function ID="3" Type="RGBMatrix" Name="Astratto veloce">
    <Speed FadeIn="219" FadeOut="219" Duration="50"/>
@@ -346,8 +346,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetIndex" Value="Abstract"/>
    <Property Name="presetSize" Value="5"/>
+   <Property Name="presetIndex" Value="Abstract"/>
   </Function>
   <Function ID="4" Type="Scene" Name="Led americana" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -636,8 +636,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetIndex" Value="Sunset"/>
    <Property Name="presetSize" Value="12"/>
+   <Property Name="presetIndex" Value="Sunset"/>
   </Function>
   <Function ID="12" Type="RGBMatrix" Name="Caldo veloce">
    <Speed FadeIn="219" FadeOut="219" Duration="50"/>
@@ -647,8 +647,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetIndex" Value="Sunset"/>
    <Property Name="presetSize" Value="4"/>
+   <Property Name="presetIndex" Value="Sunset"/>
   </Function>
   <Function ID="13" Type="RGBMatrix" Name="Freddo veloce">
    <Speed FadeIn="219" FadeOut="219" Duration="50"/>
@@ -658,8 +658,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetIndex" Value="Ocean"/>
    <Property Name="presetSize" Value="4"/>
+   <Property Name="presetIndex" Value="Ocean"/>
   </Function>
   <Function ID="14" Type="RGBMatrix" Name="Freddo lento">
    <Speed FadeIn="219" FadeOut="219" Duration="50"/>
@@ -669,8 +669,8 @@
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetIndex" Value="Ocean"/>
    <Property Name="presetSize" Value="12"/>
+   <Property Name="presetIndex" Value="Ocean"/>
   </Function>
   <Function ID="15" Type="Scene" Name="Bianco caldo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -850,11 +850,21 @@
    </Axis>
   </Function>
   <Function ID="21" Type="RGBMatrix" Name="Even/Odd" BlendMode="Mask">
-   <Speed FadeIn="798" FadeOut="1596" Duration="200"/>
+   <Speed FadeIn="100" FadeOut="200" Duration="200"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <Algorithm Type="Script">Even/Odd</Algorithm>
    <MonoColor>4294967295</MonoColor>
+   <ControlMode>RGB</ControlMode>
+   <FixtureGroup>1</FixtureGroup>
+  </Function>
+  <Function ID="22" Type="RGBMatrix" Name="Test">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Stripes</Algorithm>
+   <MonoColor>4294967295</MonoColor>
+   <EndColor>4294967295</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
   </Function>
@@ -894,18 +904,18 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="25" Type="RGBMatrix" Name="Arcobaleno veloce">
-   <Speed FadeIn="199" FadeOut="399" Duration="50"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="50"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetIndex" Value="Rainbow"/>
    <Property Name="presetSize" Value="5"/>
+   <Property Name="presetIndex" Value="Rainbow"/>
   </Function>
   <Function ID="26" Type="RGBMatrix" Name="Azzurro ghiaccio" Path="Colori">
-   <Speed FadeIn="199" FadeOut="399" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -915,7 +925,7 @@
    <Property Name="presetSize" Value="5"/>
   </Function>
   <Function ID="27" Type="RGBMatrix" Name="Barbie" Path="Colori">
-   <Speed FadeIn="199" FadeOut="399" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -924,7 +934,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="28" Type="RGBMatrix" Name="Bianco" Path="Colori">
-   <Speed FadeIn="199" FadeOut="399" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -933,7 +943,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="29" Type="RGBMatrix" Name="Blu" Path="Colori">
-   <Speed FadeIn="199" FadeOut="399" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -942,7 +952,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="30" Type="RGBMatrix" Name="Fucsia" Path="Colori">
-   <Speed FadeIn="199" FadeOut="399" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -951,7 +961,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="31" Type="RGBMatrix" Name="Giallo" Path="Colori">
-   <Speed FadeIn="199" FadeOut="399" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -960,7 +970,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="32" Type="RGBMatrix" Name="Giallo paglierino" Path="Colori">
-   <Speed FadeIn="199" FadeOut="399" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -969,7 +979,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="33" Type="RGBMatrix" Name="Rosso" Path="Colori">
-   <Speed FadeIn="199" FadeOut="399" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -978,7 +988,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="34" Type="RGBMatrix" Name="Verde" Path="Colori">
-   <Speed FadeIn="199" FadeOut="399" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -987,7 +997,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="35" Type="RGBMatrix" Name="Verde acqua" Path="Colori">
-   <Speed FadeIn="199" FadeOut="399" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -996,7 +1006,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="36" Type="RGBMatrix" Name="Viola" Path="Colori">
-   <Speed FadeIn="199" FadeOut="399" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1005,17 +1015,58 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="37" Type="RGBMatrix" Name="Arcobaleno lento">
-   <Speed FadeIn="199" FadeOut="399" Duration="50"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="50"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
    <MonoColor>4294901760</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="presetIndex" Value="Rainbow"/>
    <Property Name="presetSize" Value="13"/>
+   <Property Name="presetIndex" Value="Rainbow"/>
   </Function>
-  <Monitor DisplayMode="0" ShowLabels="1">
+  <Function ID="38" Type="Scene" Name="Led americana" Hidden="True">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="12">2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="11">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
+   <FixtureVal ID="2">7,0,8,0,9,0</FixtureVal>
+   <FixtureVal ID="9">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
+   <FixtureVal ID="10">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
+   <FixtureVal ID="0">7,0,8,0,9,0</FixtureVal>
+   <FixtureVal ID="4">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
+   <FixtureVal ID="3">2,0,3,0,4,0</FixtureVal>
+   <FixtureVal ID="14">1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="15">1,0,2,0,3,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="39" Type="Sequence" Name="Test Sequenza" BoundScene="38">
+   <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="500" FadeOut="0" Values="90">12:2,255,3,255,4,255:14:1,255,2,255,3,255</Step>
+   <Step Number="1" FadeIn="0" Hold="500" FadeOut="0" Values="90">7:0,255,1,255,2,255:11:2,255,3,255,4,255</Step>
+   <Step Number="2" FadeIn="0" Hold="500" FadeOut="0" Values="90">7:3,255,4,255,5,255:11:5,255,6,255,7,255</Step>
+   <Step Number="3" FadeIn="0" Hold="500" FadeOut="0" Values="90">7:6,255,7,255,8,255:11:8,255,9,255,10,255</Step>
+   <Step Number="4" FadeIn="0" Hold="500" FadeOut="0" Values="90">7:9,255,10,255,11,255:11:11,255,12,255,13,255</Step>
+   <Step Number="5" FadeIn="0" Hold="500" FadeOut="0" Values="90">2:7,255,8,255,9,255:15:1,255,2,255,3,255</Step>
+   <Step Number="6" FadeIn="0" Hold="4294967294" FadeOut="0" Values="90">9:2,255,3,255,4,255</Step>
+   <Step Number="7" FadeIn="0" Hold="500" FadeOut="0" Values="90">10:5,255,6,255,7,255</Step>
+   <Step Number="8" FadeIn="0" Hold="500" FadeOut="0" Values="90">10:8,255,9,255,10,255</Step>
+   <Step Number="9" FadeIn="0" Hold="500" FadeOut="0" Values="90">10:11,255,12,255,13,255</Step>
+   <Step Number="10" FadeIn="0" Hold="500" FadeOut="0" Values="90">9:5,255,6,255,7,255</Step>
+   <Step Number="11" FadeIn="0" Hold="500" FadeOut="0" Values="90">9:8,255,9,255,10,255</Step>
+   <Step Number="12" FadeIn="0" Hold="500" FadeOut="0" Values="90">9:11,255,12,255,13,255</Step>
+   <Step Number="13" FadeIn="0" Hold="500" FadeOut="0" Values="90">10:2,255,3,255,4,255</Step>
+   <Step Number="14" FadeIn="0" Hold="500" FadeOut="0" Values="90">0:7,255,8,255,9,255</Step>
+   <Step Number="15" FadeIn="0" Hold="500" FadeOut="0" Values="90">4:2,255,3,255,4,255:8:0,255,1,255,2,255</Step>
+   <Step Number="16" FadeIn="0" Hold="500" FadeOut="0" Values="90">4:5,255,6,255,7,255:8:3,255,4,255,5,255</Step>
+   <Step Number="17" FadeIn="0" Hold="500" FadeOut="0" Values="90">4:8,255,9,255,10,255:8:6,255,7,255,8,255</Step>
+   <Step Number="18" FadeIn="0" Hold="500" FadeOut="0" Values="90">4:11,255,12,255,13,255:8:9,255,10,255,11,255</Step>
+   <Step Number="19" FadeIn="0" Hold="500" FadeOut="0" Values="90">3:2,255,3,255,4,255</Step>
+  </Function>
+  <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,0,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
@@ -1239,7 +1290,7 @@
     <Tap>
      <Input Universe="0" Channel="41"/>
     </Tap>
-    <Time>399</Time>
+    <Time>50</Time>
     <Key>Num+Enter</Key>
     <Function FadeIn="5" FadeOut="6" Duration="0">36</Function>
     <Function FadeIn="5" FadeOut="6" Duration="0">35</Function>
@@ -1296,9 +1347,8 @@
      <Font>Default</Font>
     </Appearance>
     <Input Universe="0" Channel="0"/>
-    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
-    <Reset/>
-    <Level LowLimit="0" HighLimit="255" Value="244">
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="0">5</Channel>
      <Channel Fixture="2">5</Channel>
      <Channel Fixture="5">7</Channel>
@@ -1319,7 +1369,7 @@
     </Appearance>
     <Input Universe="0" Channel="2"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="Preset" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="0">
+    <Level LowLimit="0" HighLimit="255" Value="2">
      <Channel Fixture="5">5</Channel>
      <Channel Fixture="6">5</Channel>
     </Level>
@@ -1608,7 +1658,7 @@
     </Appearance>
     <Input Universe="0" Channel="4"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="Preset" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="148">
+    <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="5">4</Channel>
      <Channel Fixture="6">4</Channel>
     </Level>
@@ -1733,7 +1783,7 @@
     <Pan Position="128">
      <Input Universe="0" Channel="10"/>
     </Pan>
-    <Tilt Position="127">
+    <Tilt Position="129">
      <Input Universe="0" Channel="11"/>
     </Tilt>
    </XYPad>
