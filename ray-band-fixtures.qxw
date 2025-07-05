@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.7</Version>
-  <Author>rayband,</Author>
+  <Version>4.13.1</Version>
+  <Author>Alessandro Campolo</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
+   <BeatGenerator BeatType="Disabled" BPM="0"/>
    <Universe Name="Universe 1" ID="0">
-    <Input Plugin="MIDI" UID="Mixer luci MIDI 1" Line="1"/>
-    <Output Plugin="ArtNet" UID="192.168.0.50" Line="1"/>
-    <Feedback Plugin="MIDI" UID="Mixer luci MIDI 1" Line="1"/>
+    <Input Plugin="MIDI" UID="input" Line="1"/>
+    <Output Plugin="ArtNet" UID="172.17.0.1" Line="1"/>
+    <Feedback Plugin="MIDI" UID="input" Line="1"/>
    </Universe>
    <Universe Name="Universe 2" ID="1" Passthrough="True">
-    <Input Plugin="ArtNet" UID="192.168.0.50" Line="1">
+    <Input Plugin="ArtNet" UID="172.17.0.1" Line="1">
      <PluginParameters inputUni="0"/>
     </Input>
-    <Output Plugin="DMX USB" UID="FT232R USB UART (S/N: AB0OXHHG)" Line="0"/>
+    <Output Plugin="DMX USB" UID="None" Line="0"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -30,8 +31,8 @@
    <Address>29</Address>
    <Channels>16</Channels>
    <ExcludeFade>0,1,2,3,4,5,6,13,14,15</ExcludeFade>
-   <Modifier Channel="6" Name="Custom wash shutter"/>
    <Modifier Channel="4" Name="Always Off"/>
+   <Modifier Channel="6" Name="Custom wash shutter"/>
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
@@ -40,7 +41,7 @@
    <ID>1</ID>
    <Name>Generic Smoke</Name>
    <Universe>0</Universe>
-   <Address>249</Address>
+   <Address>197</Address>
    <Channels>2</Channels>
   </Fixture>
   <Fixture>
@@ -53,8 +54,8 @@
    <Address>109</Address>
    <Channels>16</Channels>
    <ExcludeFade>0,1,2,3,4,5,6,13,14,15</ExcludeFade>
-   <Modifier Channel="6" Name="Custom wash shutter"/>
    <Modifier Channel="4" Name="Always Off"/>
+   <Modifier Channel="6" Name="Custom wash shutter"/>
   </Fixture>
   <Fixture>
    <Manufacturer>Stairville</Manufacturer>
@@ -107,24 +108,14 @@
    <Modifier Channel="6" Name="Custom shutter"/>
   </Fixture>
   <Fixture>
-   <Manufacturer>Ayra</Manufacturer>
-   <Model>ComPar KIT 3</Model>
-   <Mode>12-Channel</Mode>
+   <Manufacturer>ZQ</Manufacturer>
+   <Model>ZQ01496</Model>
+   <Mode>DMX</Mode>
    <ID>7</ID>
-   <Name>ComPar KIT 3 (SX)</Name>
+   <Name>Accecatore 1D DX/UP</Name>
    <Universe>0</Universe>
    <Address>199</Address>
-   <Channels>12</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Ayra</Manufacturer>
-   <Model>ComPar KIT 3</Model>
-   <Mode>12-Channel</Mode>
-   <ID>8</ID>
-   <Name>ComPar KIT 3 (DX)</Name>
-   <Universe>0</Universe>
-   <Address>211</Address>
-   <Channels>12</Channels>
+   <Channels>8</Channels>
   </Fixture>
   <Fixture>
    <Manufacturer>Eurolite</Manufacturer>
@@ -175,46 +166,6 @@
    <Modifier Channel="1" Name="Always Full"/>
   </Fixture>
   <Fixture>
-   <Manufacturer>ZQ</Manufacturer>
-   <Model>ZQ01496</Model>
-   <Mode>DMX</Mode>
-   <ID>13</ID>
-   <Name>Accecatore (DX)</Name>
-   <Universe>0</Universe>
-   <Address>299</Address>
-   <Channels>8</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Betopper</Manufacturer>
-   <Model>LC200W-H</Model>
-   <Mode>Mode A</Mode>
-   <ID>14</ID>
-   <Name>LC200W-H (DX)</Name>
-   <Universe>0</Universe>
-   <Address>311</Address>
-   <Channels>7</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Betopper</Manufacturer>
-   <Model>LC200W-H</Model>
-   <Mode>Mode A</Mode>
-   <ID>15</ID>
-   <Name>LC200W-H (SX)</Name>
-   <Universe>0</Universe>
-   <Address>334</Address>
-   <Channels>7</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Betopper</Manufacturer>
-   <Model>LC002</Model>
-   <Mode>Mode A</Mode>
-   <ID>16</ID>
-   <Name>LC002 (DX)</Name>
-   <Universe>0</Universe>
-   <Address>307</Address>
-   <Channels>4</Channels>
-  </Fixture>
-  <Fixture>
    <Manufacturer>Betopper</Manufacturer>
    <Model>LPC120</Model>
    <Mode>8CH</Mode>
@@ -225,26 +176,6 @@
    <Channels>8</Channels>
   </Fixture>
   <Fixture>
-   <Manufacturer>ZQ</Manufacturer>
-   <Model>ZQ01496</Model>
-   <Mode>DMX</Mode>
-   <ID>18</ID>
-   <Name>Accecatore (CDX)</Name>
-   <Universe>0</Universe>
-   <Address>318</Address>
-   <Channels>8</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>ZQ</Manufacturer>
-   <Model>ZQ01496</Model>
-   <Mode>DMX</Mode>
-   <ID>19</ID>
-   <Name>Accecatore (CSX)</Name>
-   <Universe>0</Universe>
-   <Address>326</Address>
-   <Channels>8</Channels>
-  </Fixture>
-  <Fixture>
    <Manufacturer>Betopper</Manufacturer>
    <Model>LPC120</Model>
    <Mode>8CH</Mode>
@@ -252,26 +183,6 @@
    <Name>LPC120 #4</Name>
    <Universe>0</Universe>
    <Address>407</Address>
-   <Channels>8</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>Betopper</Manufacturer>
-   <Model>LC002</Model>
-   <Mode>Mode A</Mode>
-   <ID>21</ID>
-   <Name>LC002 (SX)</Name>
-   <Universe>0</Universe>
-   <Address>341</Address>
-   <Channels>4</Channels>
-  </Fixture>
-  <Fixture>
-   <Manufacturer>ZQ</Manufacturer>
-   <Model>ZQ01496</Model>
-   <Mode>DMX</Mode>
-   <ID>22</ID>
-   <Name>Accecatore (SX)</Name>
-   <Universe>0</Universe>
-   <Address>345</Address>
    <Channels>8</Channels>
   </Fixture>
   <Fixture>
@@ -414,17 +325,95 @@
    <Address>391</Address>
    <Channels>8</Channels>
   </Fixture>
+  <Fixture>
+   <Manufacturer>ZQ</Manufacturer>
+   <Model>ZQ01496</Model>
+   <Mode>DMX</Mode>
+   <ID>42</ID>
+   <Name>Accecatore 2D CDX/UP</Name>
+   <Universe>0</Universe>
+   <Address>207</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>ZQ</Manufacturer>
+   <Model>ZQ01496</Model>
+   <Mode>DMX</Mode>
+   <ID>43</ID>
+   <Name>Accecatore 3D CDX/DN</Name>
+   <Universe>0</Universe>
+   <Address>215</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>ZQ</Manufacturer>
+   <Model>ZQ01496</Model>
+   <Mode>DMX</Mode>
+   <ID>44</ID>
+   <Name>Accecatore 4D DX/DN</Name>
+   <Universe>0</Universe>
+   <Address>223</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>ZQ</Manufacturer>
+   <Model>ZQ01496</Model>
+   <Mode>DMX</Mode>
+   <ID>45</ID>
+   <Name>Accecatore 1S CSX/UP</Name>
+   <Universe>0</Universe>
+   <Address>231</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>ZQ</Manufacturer>
+   <Model>ZQ01496</Model>
+   <Mode>DMX</Mode>
+   <ID>46</ID>
+   <Name>Accecatore 2S SX/UP</Name>
+   <Universe>0</Universe>
+   <Address>239</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>ZQ</Manufacturer>
+   <Model>ZQ01496</Model>
+   <Mode>DMX</Mode>
+   <ID>47</ID>
+   <Name>Accecatore 3S SX/DN</Name>
+   <Universe>0</Universe>
+   <Address>247</Address>
+   <Channels>8</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>ZQ</Manufacturer>
+   <Model>ZQ01496</Model>
+   <Mode>DMX</Mode>
+   <ID>48</ID>
+   <Name>Accecatore 4S CSX/DN</Name>
+   <Universe>0</Universe>
+   <Address>255</Address>
+   <Channels>8</Channels>
+  </Fixture>
   <FixtureGroup ID="0">
-   <Name>Ayra</Name>
-   <Size X="8" Y="1"/>
-   <Head X="0" Y="0" Fixture="7">0</Head>
-   <Head X="1" Y="0" Fixture="7">1</Head>
-   <Head X="2" Y="0" Fixture="7">2</Head>
-   <Head X="3" Y="0" Fixture="7">3</Head>
-   <Head X="4" Y="0" Fixture="8">0</Head>
-   <Head X="5" Y="0" Fixture="8">1</Head>
-   <Head X="6" Y="0" Fixture="8">2</Head>
-   <Head X="7" Y="0" Fixture="8">3</Head>
+   <Name>Accecatori</Name>
+   <Size X="8" Y="2"/>
+   <Head X="0" Y="0" Fixture="46">0</Head>
+   <Head X="1" Y="0" Fixture="46">1</Head>
+   <Head X="2" Y="0" Fixture="45">0</Head>
+   <Head X="3" Y="0" Fixture="45">1</Head>
+   <Head X="4" Y="0" Fixture="42">0</Head>
+   <Head X="5" Y="0" Fixture="42">1</Head>
+   <Head X="6" Y="0" Fixture="7">0</Head>
+   <Head X="7" Y="0" Fixture="7">1</Head>
+   <Head X="0" Y="1" Fixture="47">0</Head>
+   <Head X="1" Y="1" Fixture="47">1</Head>
+   <Head X="2" Y="1" Fixture="48">0</Head>
+   <Head X="3" Y="1" Fixture="48">1</Head>
+   <Head X="4" Y="1" Fixture="43">0</Head>
+   <Head X="5" Y="1" Fixture="43">1</Head>
+   <Head X="6" Y="1" Fixture="44">0</Head>
+   <Head X="7" Y="1" Fixture="44">1</Head>
   </FixtureGroup>
   <FixtureGroup ID="1">
    <Name>Led americana</Name>
@@ -449,16 +438,6 @@
    <Head X="17" Y="0" Fixture="11">2</Head>
    <Head X="18" Y="0" Fixture="11">3</Head>
    <Head X="19" Y="0" Fixture="3">0</Head>
-   <Head X="0" Y="1" Fixture="14">0</Head>
-   <Head X="1" Y="1" Fixture="7">0</Head>
-   <Head X="2" Y="1" Fixture="7">1</Head>
-   <Head X="3" Y="1" Fixture="7">2</Head>
-   <Head X="4" Y="1" Fixture="7">3</Head>
-   <Head X="5" Y="1" Fixture="15">0</Head>
-   <Head X="15" Y="1" Fixture="8">0</Head>
-   <Head X="16" Y="1" Fixture="8">1</Head>
-   <Head X="17" Y="1" Fixture="8">2</Head>
-   <Head X="18" Y="1" Fixture="8">3</Head>
    <Head X="2" Y="2" Fixture="34">0</Head>
    <Head X="3" Y="2" Fixture="33">0</Head>
    <Head X="4" Y="2" Fixture="32">0</Head>
@@ -476,34 +455,35 @@
    <Head X="16" Y="2" Fixture="36">0</Head>
    <Head X="17" Y="2" Fixture="35">0</Head>
   </FixtureGroup>
-  <ChannelsGroup ID="0" Name="Red" Value="0">0,7,2,7,3,2,4,2,4,5,4,8,4,11,7,0,7,3,7,6,7,9,8,0,8,3,8,6,8,9,9,2,9,5,9,8,9,11,10,2,10,5,10,8,10,11,11,2,11,5,11,8,11,11,12,2,17,1,20,1,23,1,24,1,25,1,26,1,27,1,28,1</ChannelsGroup>
-  <ChannelsGroup ID="1" Name="Green" Value="0">0,8,2,8,3,3,4,3,4,6,4,9,4,12,7,1,7,4,7,7,7,10,8,1,8,4,8,7,8,10,9,3,9,6,9,9,9,12,10,3,10,6,10,9,10,12,11,3,11,6,11,9,11,12,12,3,17,2,20,2,23,2,24,2,25,2,26,2,27,2,28,2</ChannelsGroup>
-  <ChannelsGroup ID="2" Name="Blue" Value="0">0,9,2,9,3,4,4,4,4,7,4,10,4,13,7,2,7,5,7,8,7,11,8,2,8,5,8,8,8,11,9,4,9,7,9,10,9,13,10,4,10,7,10,10,10,13,11,4,11,7,11,10,11,13,12,4,17,3,20,3,23,3,24,3,25,3,26,3,27,3,28,3</ChannelsGroup>
-  <ChannelsGroup ID="3" Name="White" Value="0">0,10,2,10,3,5,12,5,17,4,20,4,23,4,24,4,25,4,26,4,27,4,28,4</ChannelsGroup>
-  <ChannelsGroup ID="4" Name="Dimmer" Value="0" InputUniverse="0" InputChannel="7">3,0,4,0,9,0,10,0,11,0,12,0,14,0,15,0,17,0,20,0,23,0,24,0,25,0,26,0,27,0,28,0,29,0,30,0,31,0,32,0,33,0,34,0,35,0,36,0</ChannelsGroup>
+  <ChannelsGroup ID="0" Name="Red" Value="0">0,7,2,7,3,2,4,2,4,5,4,8,4,11,9,2,9,5,9,8,9,11,10,2,10,5,10,8,10,11,11,2,11,5,11,8,11,11,12,2,17,1,20,1,23,1,24,1,25,1,26,1,27,1,28,1,29,1,30,1,31,1,32,1,33,1,34,1,35,1,36,1</ChannelsGroup>
+  <ChannelsGroup ID="1" Name="Green" Value="0">0,8,2,8,3,3,4,3,4,6,4,9,4,12,9,3,9,6,9,9,9,12,10,3,10,6,10,9,10,12,11,3,11,6,11,9,11,12,12,3,17,2,20,2,23,2,24,2,25,2,26,2,27,2,28,2,29,2,30,2,31,2,32,2,33,2,34,2,35,2,36,2</ChannelsGroup>
+  <ChannelsGroup ID="2" Name="Blue" Value="0">0,9,2,9,3,4,4,4,4,7,4,10,4,13,9,4,9,7,9,10,9,13,10,4,10,7,10,10,10,13,11,4,11,7,11,10,11,13,12,4,17,3,20,3,23,3,24,3,25,3,26,3,27,3,28,3,29,3,30,3,31,3,32,3,33,3,34,3,35,3,36,3</ChannelsGroup>
+  <ChannelsGroup ID="3" Name="White" Value="0">0,10,2,10,3,5,12,5,17,4,20,4,23,4,24,4,25,4,26,4,27,4,28,4,29,4,30,4,31,4,32,4,33,4,34,4,35,4,36,4</ChannelsGroup>
+  <ChannelsGroup ID="4" Name="Dimmer" Value="0" InputUniverse="0" InputChannel="7">3,0,4,0,9,0,10,0,11,0,12,0,17,0,20,0,23,0,24,0,25,0,26,0,27,0,28,0,29,0,30,0,31,0,32,0,33,0,34,0,35,0,36,0</ChannelsGroup>
+  <ChannelsGroup ID="5" Name="Acc Warm White 1" Value="0">7,4,42,4,43,4,44,4,45,4,46,4,47,4,48,4</ChannelsGroup>
+  <ChannelsGroup ID="6" Name="Acc Cold White 1" Value="0">7,5,42,5,43,5,44,5,45,5,46,5,47,5,48,5</ChannelsGroup>
+  <ChannelsGroup ID="7" Name="Acc Warm White 2" Value="0">7,6,42,6,43,6,44,6,45,6,46,6,47,6,48,6</ChannelsGroup>
+  <ChannelsGroup ID="8" Name="Acc Cold White 2" Value="0">7,7,42,7,43,7,44,7,45,7,46,7,47,7,48,7</ChannelsGroup>
+  <ChannelsGroup ID="9" Name="LPC120 Red" Value="0">17,1,20,1,23,1,24,1,25,1,26,1,27,1,28,1,29,1,30,1,31,1,32,1,33,1,34,1,35,1,36,1</ChannelsGroup>
+  <ChannelsGroup ID="10" Name="LPC120 Green" Value="0">17,2,20,2,23,2,24,2,25,2,26,2,27,2,28,2,29,2,30,2,31,2,32,2,33,2,34,2,35,2,36,2</ChannelsGroup>
+  <ChannelsGroup ID="11" Name="LPC120 Blue" Value="0">17,3,20,3,23,3,24,3,25,3,26,3,27,3,28,3,29,3,30,3,31,3,32,3,33,3,34,3,35,3,36,3</ChannelsGroup>
+  <ChannelsGroup ID="12" Name="LPC120 White" Value="0">17,4,20,4,23,4,24,4,25,4,26,4,27,4,28,4,29,4,30,4,31,4,32,4,33,4,34,4,35,4,36,4</ChannelsGroup>
+  <ChannelsGroup ID="13" Name="LPC120 Strobe" Value="0">17,5,20,5,23,5,24,5,25,5,26,5,27,5,28,5,29,5,30,5,31,5,32,5,33,5,34,5,35,5,36,5</ChannelsGroup>
   <Function ID="0" Type="Scene" Name="FUMO">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="1">0,255,1,255</FixtureVal>
   </Function>
   <Function ID="1" Type="Scene" Name="Bianco FULL">
    <Speed FadeIn="0" FadeOut="200" Duration="0"/>
-   <ChannelGroupsVal>0,255,1,255,2,255,3,255</ChannelGroupsVal>
+   <ChannelGroupsVal>4,255,0,255,1,255,2,255,3,255,5,255,6,255,7,255,8,255</ChannelGroupsVal>
    <FixtureVal ID="0">5,255,7,255,8,255,9,255,10,255</FixtureVal>
    <FixtureVal ID="2">5,255,7,255,8,255,9,255,10,255</FixtureVal>
    <FixtureVal ID="3">0,255,2,255,3,255,4,255,5,255</FixtureVal>
    <FixtureVal ID="4">0,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
-   <FixtureVal ID="7">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255</FixtureVal>
-   <FixtureVal ID="8">0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255</FixtureVal>
    <FixtureVal ID="9">0,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
    <FixtureVal ID="10">0,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
    <FixtureVal ID="11">0,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
    <FixtureVal ID="12">0,255,2,255,3,255,4,255,5,255</FixtureVal>
-   <FixtureVal ID="18">0,255,4,255,5,255,6,255,7,255</FixtureVal>
-   <FixtureVal ID="19">0,255,4,255,5,255,6,255,7,255</FixtureVal>
-   <FixtureVal ID="13">0,255,4,255,5,255,6,255,7,255</FixtureVal>
-   <FixtureVal ID="22">0,255,4,255,5,255,6,255,7,255</FixtureVal>
-   <FixtureVal ID="14">0,255,1,255,2,255,3,255</FixtureVal>
-   <FixtureVal ID="15">0,255,1,255,2,255,3,255</FixtureVal>
    <FixtureVal ID="17">0,255,1,255,2,255,3,255,4,255</FixtureVal>
    <FixtureVal ID="20">0,255,1,255,2,255,3,255,4,255</FixtureVal>
    <FixtureVal ID="23">0,255,1,255,2,255,3,255,4,255</FixtureVal>
@@ -512,6 +492,22 @@
    <FixtureVal ID="26">0,255,1,255,2,255,3,255,4,255</FixtureVal>
    <FixtureVal ID="27">0,255,1,255,2,255,3,255,4,255</FixtureVal>
    <FixtureVal ID="28">0,255,1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="35">0,255,1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="29">0,255,1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="30">0,255,1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="31">0,255,1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="32">0,255,1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="33">0,255,1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="34">0,255,1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="36">0,255,1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="7">4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="42">4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="43">4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="44">4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="45">4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="46">4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="47">4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="48">4,255,5,255,6,255,7,255</FixtureVal>
   </Function>
   <Function ID="2" Type="RGBMatrix" Name="Astratto lento">
    <Speed FadeIn="219" FadeOut="219" Duration="50"/>
@@ -546,8 +542,6 @@
    <FixtureVal ID="0">7,0,8,0,9,0,10,0</FixtureVal>
    <FixtureVal ID="4">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
    <FixtureVal ID="3">2,0,3,0,4,0,5,0</FixtureVal>
-   <FixtureVal ID="7">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
-   <FixtureVal ID="8">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
   </Function>
   <Function ID="5" Type="EFX" Name="Linea V">
    <Fixture>
@@ -860,17 +854,27 @@
   </Function>
   <Function ID="15" Type="Scene" Name="Bianco caldo">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="18">0,255,4,255,6,255</FixtureVal>
-   <FixtureVal ID="19">0,255,4,255,6,255</FixtureVal>
-   <FixtureVal ID="13">0,255,4,255,6,255</FixtureVal>
-   <FixtureVal ID="22">0,255,4,255,6,255</FixtureVal>
+   <ChannelGroupsVal>5,255,7,255</ChannelGroupsVal>
+   <FixtureVal ID="7">4,255,6,255</FixtureVal>
+   <FixtureVal ID="42">4,255,6,255</FixtureVal>
+   <FixtureVal ID="43">4,255,6,255</FixtureVal>
+   <FixtureVal ID="44">4,255,6,255</FixtureVal>
+   <FixtureVal ID="45">4,255,6,255</FixtureVal>
+   <FixtureVal ID="46">4,255,6,255</FixtureVal>
+   <FixtureVal ID="47">4,255,6,255</FixtureVal>
+   <FixtureVal ID="48">4,255,6,255</FixtureVal>
   </Function>
   <Function ID="16" Type="Scene" Name="Bianco naturale">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="18">0,255,5,255,7,255</FixtureVal>
-   <FixtureVal ID="19">0,255,5,255,7,255</FixtureVal>
-   <FixtureVal ID="13">0,255,5,255,7,255</FixtureVal>
-   <FixtureVal ID="22">0,255,5,255,7,255</FixtureVal>
+   <ChannelGroupsVal>6,255,8,255</ChannelGroupsVal>
+   <FixtureVal ID="7">5,255,7,255</FixtureVal>
+   <FixtureVal ID="42">5,255,7,255</FixtureVal>
+   <FixtureVal ID="43">5,255,7,255</FixtureVal>
+   <FixtureVal ID="44">5,255,7,255</FixtureVal>
+   <FixtureVal ID="45">5,255,7,255</FixtureVal>
+   <FixtureVal ID="46">5,255,7,255</FixtureVal>
+   <FixtureVal ID="47">5,255,7,255</FixtureVal>
+   <FixtureVal ID="48">5,255,7,255</FixtureVal>
   </Function>
   <Function ID="17" Type="EFX" Name="Otto">
    <Fixture>
@@ -1047,8 +1051,8 @@
    <Algorithm Type="Script">Stripes</Algorithm>
    <MonoColor>4294967295</MonoColor>
    <EndColor>4294967295</EndColor>
-   <ControlMode>RGB</ControlMode>
-   <FixtureGroup>1</FixtureGroup>
+   <ControlMode>White</ControlMode>
+   <FixtureGroup>0</FixtureGroup>
   </Function>
   <Function ID="23" Type="Chaser" Name="Burdellu colori">
    <Speed FadeIn="0" FadeOut="0" Duration="50"/>
@@ -1217,10 +1221,6 @@
    <FixtureVal ID="0">7,0,8,0,9,0</FixtureVal>
    <FixtureVal ID="4">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
    <FixtureVal ID="3">2,0,3,0,4,0</FixtureVal>
-   <FixtureVal ID="14">1,0,2,0,3,0</FixtureVal>
-   <FixtureVal ID="7">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
-   <FixtureVal ID="15">1,0,2,0,3,0</FixtureVal>
-   <FixtureVal ID="8">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
   </Function>
   <Function ID="39" Type="Sequence" Name="Test Sequenza" BoundScene="38">
    <Speed FadeIn="0" FadeOut="0" Duration="4294967294"/>
@@ -1250,38 +1250,36 @@
   </Function>
   <Function ID="40" Type="Scene" Name="Bianco (scene)">
    <Speed FadeIn="698" FadeOut="698" Duration="0"/>
-   <ChannelGroupsVal>0,0,1,0,2,0,3,255</ChannelGroupsVal>
-   <FixtureVal ID="0">7,0,8,0,9,0,10,255</FixtureVal>
-   <FixtureVal ID="2">7,0,8,0,9,0,10,255</FixtureVal>
-   <FixtureVal ID="3">2,0,3,0,4,0,5,255</FixtureVal>
-   <FixtureVal ID="4">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
-   <FixtureVal ID="7">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
-   <FixtureVal ID="8">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
-   <FixtureVal ID="9">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
-   <FixtureVal ID="10">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
-   <FixtureVal ID="11">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
-   <FixtureVal ID="12">2,0,3,0,4,0,5,255</FixtureVal>
-   <FixtureVal ID="18">4,255,5,255,6,255,7,255</FixtureVal>
-   <FixtureVal ID="19">4,255,5,255,6,255,7,255</FixtureVal>
-   <FixtureVal ID="13">4,255,5,255,6,255,7,255</FixtureVal>
-   <FixtureVal ID="22">4,255,5,255,6,255,7,255</FixtureVal>
-   <FixtureVal ID="14">1,255,2,255,3,255</FixtureVal>
-   <FixtureVal ID="15">1,255,2,255,3,255</FixtureVal>
-   <FixtureVal ID="17">1,0,2,0,3,0,4,255</FixtureVal>
-   <FixtureVal ID="20">1,0,2,0,3,0,4,255</FixtureVal>
-   <FixtureVal ID="23">1,0,2,0,3,0,4,255</FixtureVal>
-   <FixtureVal ID="24">1,0,2,0,3,0,4,255</FixtureVal>
-   <FixtureVal ID="25">1,0,2,0,3,0,4,255</FixtureVal>
-   <FixtureVal ID="26">1,0,2,0,3,0,4,255</FixtureVal>
-   <FixtureVal ID="27">1,0,2,0,3,0,4,255</FixtureVal>
-   <FixtureVal ID="28">1,0,2,0,3,0,4,255</FixtureVal>
+   <ChannelGroupsVal>0,255,1,255,2,255,3,255</ChannelGroupsVal>
+   <FixtureVal ID="0">7,255,8,255,9,255,10,255</FixtureVal>
+   <FixtureVal ID="2">7,255,8,255,9,255,10,255</FixtureVal>
+   <FixtureVal ID="3">2,255,3,255,4,255,5,255</FixtureVal>
+   <FixtureVal ID="4">2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
+   <FixtureVal ID="9">2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
+   <FixtureVal ID="10">2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
+   <FixtureVal ID="11">2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255</FixtureVal>
+   <FixtureVal ID="12">2,255,3,255,4,255,5,255</FixtureVal>
+   <FixtureVal ID="17">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="20">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="23">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="24">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="25">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="26">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="27">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="28">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="29">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="30">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="31">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="32">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="33">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="34">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="35">1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="36">1,255,2,255,3,255,4,255</FixtureVal>
   </Function>
   <Function ID="41" Type="Scene" Name="Pubblico">
    <Speed FadeIn="0" FadeOut="300" Duration="0"/>
-   <FixtureVal ID="16">0,255,1,255,2,255</FixtureVal>
-   <FixtureVal ID="21">0,255,1,255,2,255</FixtureVal>
   </Function>
-  <Monitor DisplayMode="1" ShowLabels="1">
+  <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,0,50,0,0,0,0,0</Font>
    <ChannelStyle>0</ChannelStyle>
    <ValueStyle>0</ValueStyle>
@@ -1292,8 +1290,6 @@
    <FxItem ID="4" XPos="3671" YPos="300"/>
    <FxItem ID="5" XPos="3019" YPos="300"/>
    <FxItem ID="6" XPos="1436" YPos="300"/>
-   <FxItem ID="7" XPos="300" YPos="2200"/>
-   <FxItem ID="8" XPos="3400" YPos="2200"/>
    <FxItem ID="9" XPos="2459" YPos="300"/>
    <FxItem ID="10" XPos="1840" YPos="300"/>
    <FxItem ID="11" XPos="543" YPos="300"/>
@@ -1316,7 +1312,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="0" Width="200" Height="475"/>
+    <WindowState Visible="False" X="0" Y="0" Width="200" Height="475"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1325,7 +1321,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="Smarmella (Bianco) - 7" ID="52" Icon="">
-     <WindowState Visible="True" X="100" Y="40" Width="95" Height="70"/>
+     <WindowState Visible="False" X="100" Y="40" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1339,7 +1335,7 @@
      <Input Universe="0" Channel="34"/>
     </Button>
     <Button Caption="Rosso - 2" ID="53" Icon="">
-     <WindowState Visible="True" X="5" Y="110" Width="95" Height="70"/>
+     <WindowState Visible="False" X="5" Y="110" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1353,7 +1349,7 @@
      <Input Universe="0" Channel="29"/>
     </Button>
     <Button Caption="Verde - 8" ID="55" Icon="">
-     <WindowState Visible="True" X="100" Y="110" Width="95" Height="70"/>
+     <WindowState Visible="False" X="100" Y="110" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1367,7 +1363,7 @@
      <Input Universe="0" Channel="35"/>
     </Button>
     <Button Caption="Blu - 3" ID="57" Icon="">
-     <WindowState Visible="True" X="5" Y="180" Width="95" Height="70"/>
+     <WindowState Visible="False" X="5" Y="180" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1381,7 +1377,7 @@
      <Input Universe="0" Channel="30"/>
     </Button>
     <Button Caption="Azzurro ghiaccio - 9" ID="3" Icon="">
-     <WindowState Visible="True" X="100" Y="180" Width="95" Height="70"/>
+     <WindowState Visible="False" X="100" Y="180" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1395,7 +1391,7 @@
      <Input Universe="0" Channel="20"/>
     </Button>
     <Button Caption="Barbie - 4" ID="4" Icon="">
-     <WindowState Visible="True" X="5" Y="260" Width="95" Height="70"/>
+     <WindowState Visible="False" X="5" Y="260" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1409,7 +1405,7 @@
      <Input Universe="0" Channel="31"/>
     </Button>
     <Button Caption="Fucsia - 10" ID="10" Icon="">
-     <WindowState Visible="True" X="100" Y="260" Width="95" Height="70"/>
+     <WindowState Visible="False" X="100" Y="260" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1423,7 +1419,7 @@
      <Input Universe="0" Channel="21"/>
     </Button>
     <Button Caption="Verde acqua - 6" ID="13" Icon="">
-     <WindowState Visible="True" X="5" Y="400" Width="95" Height="70"/>
+     <WindowState Visible="False" X="5" Y="400" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1437,7 +1433,7 @@
      <Input Universe="0" Channel="33"/>
     </Button>
     <Button Caption="Giallo - 5" ID="11" Icon="">
-     <WindowState Visible="True" X="5" Y="330" Width="95" Height="70"/>
+     <WindowState Visible="False" X="5" Y="330" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1451,7 +1447,7 @@
      <Input Universe="0" Channel="32"/>
     </Button>
     <Button Caption="Giallo paglierino - 11" ID="12" Icon="">
-     <WindowState Visible="True" X="100" Y="330" Width="95" Height="70"/>
+     <WindowState Visible="False" X="100" Y="330" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1465,7 +1461,7 @@
      <Input Universe="0" Channel="22"/>
     </Button>
     <Button Caption="Viola - 12" ID="14" Icon="">
-     <WindowState Visible="True" X="100" Y="400" Width="95" Height="70"/>
+     <WindowState Visible="False" X="100" Y="400" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1480,7 +1476,7 @@
     </Button>
    </SoloFrame>
    <SpeedDial Caption="Fade time" ID="1">
-    <WindowState Visible="True" X="1110" Y="240" Width="205" Height="235"/>
+    <WindowState Visible="False" X="1110" Y="240" Width="205" Height="235"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1516,7 +1512,7 @@
     <Function FadeIn="5" FadeOut="6" Duration="0">37</Function>
    </SpeedDial>
    <Button Caption="" ID="69" Icon="">
-    <WindowState Visible="True" X="1620" Y="25" Width="205" Height="120"/>
+    <WindowState Visible="False" X="1620" Y="25" Width="205" Height="120"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1531,7 +1527,7 @@
     <Input Universe="0" Channel="43"/>
    </Button>
    <Button Caption="FUMO" ID="60" Icon="">
-    <WindowState Visible="True" X="210" Y="70" Width="90" Height="70"/>
+    <WindowState Visible="False" X="210" Y="70" Width="90" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1546,7 +1542,7 @@
     <Input Universe="0" Channel="60"/>
    </Button>
    <Slider Caption="Dimmer" ID="9" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="310" Y="150" Width="65" Height="325"/>
+    <WindowState Visible="False" X="310" Y="150" Width="65" Height="325"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1567,7 +1563,7 @@
     </Playback>
    </Slider>
    <Slider Caption="Gobo Beamz" ID="24" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="450" Y="150" Width="65" Height="325"/>
+    <WindowState Visible="False" X="450" Y="150" Width="65" Height="325"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1586,7 +1582,7 @@
     </Playback>
    </Slider>
    <Slider Caption="Gobo rotation" ID="25" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="520" Y="150" Width="65" Height="325"/>
+    <WindowState Visible="False" X="520" Y="150" Width="65" Height="325"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1605,7 +1601,7 @@
     </Playback>
    </Slider>
    <SpeedDial Caption="Teste mobili" ID="39">
-    <WindowState Visible="True" X="1385" Y="5" Width="205" Height="240"/>
+    <WindowState Visible="False" X="1385" Y="5" Width="205" Height="240"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1632,7 +1628,7 @@
     <Function FadeIn="0" FadeOut="0" Duration="6">7</Function>
    </SpeedDial>
    <SpeedDial Caption="Speed" ID="6">
-    <WindowState Visible="True" X="895" Y="240" Width="205" Height="235"/>
+    <WindowState Visible="False" X="895" Y="240" Width="205" Height="235"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1670,7 +1666,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="305" Y="5" Width="595" Height="115"/>
+    <WindowState Visible="False" X="305" Y="5" Width="595" Height="115"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1679,7 +1675,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="Arcobaleno lento" ID="30" Icon="">
-     <WindowState Visible="True" X="5" Y="40" Width="65" Height="70"/>
+     <WindowState Visible="False" X="5" Y="40" Width="65" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1693,7 +1689,7 @@
      <Input Universe="0" Channel="52"/>
     </Button>
     <Button Caption="Astratto veloce" ID="31" Icon="">
-     <WindowState Visible="True" X="215" Y="40" Width="65" Height="70"/>
+     <WindowState Visible="False" X="215" Y="40" Width="65" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1707,7 +1703,7 @@
      <Input Universe="0" Channel="55"/>
     </Button>
     <Button Caption="Arcobaleno veloce" ID="32" Icon="">
-     <WindowState Visible="True" X="75" Y="40" Width="65" Height="70"/>
+     <WindowState Visible="False" X="75" Y="40" Width="65" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1722,7 +1718,7 @@
      <Input Universe="0" Channel="53"/>
     </Button>
     <Button Caption="B" ID="2" Icon="">
-     <WindowState Visible="True" X="570" Y="65" Width="20" Height="20"/>
+     <WindowState Visible="False" X="570" Y="65" Width="20" Height="20"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1736,7 +1732,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="W" ID="7" Icon="">
-     <WindowState Visible="True" X="570" Y="85" Width="20" Height="20"/>
+     <WindowState Visible="False" X="570" Y="85" Width="20" Height="20"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1750,7 +1746,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="Astratto lento" ID="19" Icon="">
-     <WindowState Visible="True" X="145" Y="40" Width="65" Height="70"/>
+     <WindowState Visible="False" X="145" Y="40" Width="65" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1764,7 +1760,7 @@
      <Input Universe="0" Channel="54"/>
     </Button>
     <Button Caption="Caldo lento" ID="20" Icon="">
-     <WindowState Visible="True" X="290" Y="40" Width="65" Height="70"/>
+     <WindowState Visible="False" X="290" Y="40" Width="65" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1778,7 +1774,7 @@
      <Input Universe="0" Channel="56"/>
     </Button>
     <Button Caption="Caldo veloce" ID="21" Icon="">
-     <WindowState Visible="True" X="360" Y="40" Width="65" Height="70"/>
+     <WindowState Visible="False" X="360" Y="40" Width="65" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1792,7 +1788,7 @@
      <Input Universe="0" Channel="57"/>
     </Button>
     <Button Caption="Freddo lento" ID="27" Icon="">
-     <WindowState Visible="True" X="430" Y="40" Width="65" Height="70"/>
+     <WindowState Visible="False" X="430" Y="40" Width="65" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1806,7 +1802,7 @@
      <Input Universe="0" Channel="58"/>
     </Button>
     <Button Caption="C" ID="15" Icon="">
-     <WindowState Visible="True" X="570" Y="45" Width="20" Height="20"/>
+     <WindowState Visible="False" X="570" Y="45" Width="20" Height="20"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1819,7 +1815,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="Freddo veloce" ID="26" Icon="">
-     <WindowState Visible="True" X="500" Y="40" Width="65" Height="70"/>
+     <WindowState Visible="False" X="500" Y="40" Width="65" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1834,7 +1830,7 @@
     </Button>
    </SoloFrame>
    <Slider Caption="Strobe" ID="23" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="380" Y="150" Width="65" Height="325"/>
+    <WindowState Visible="False" X="380" Y="150" Width="65" Height="325"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1855,7 +1851,7 @@
     </Playback>
    </Slider>
    <Slider Caption="Slider 5" ID="0" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="595" Y="150" Width="65" Height="325"/>
+    <WindowState Visible="False" X="595" Y="150" Width="65" Height="325"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1874,7 +1870,7 @@
     </Playback>
    </Slider>
    <Button Caption="Override" ID="28" Icon="">
-    <WindowState Visible="True" X="1510" Y="310" Width="70" Height="70"/>
+    <WindowState Visible="False" X="1510" Y="310" Width="70" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1889,7 +1885,7 @@
     <Input Universe="0" Channel="25"/>
    </Button>
    <Button Caption="BURDELLU" ID="33" Icon="">
-    <WindowState Visible="True" X="1510" Y="380" Width="70" Height="70"/>
+    <WindowState Visible="False" X="1510" Y="380" Width="70" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1903,7 +1899,7 @@
     <Input Universe="0" Channel="44"/>
    </Button>
    <Button Caption="Finale canzoni" ID="40" Icon="">
-    <WindowState Visible="True" X="1440" Y="380" Width="70" Height="70"/>
+    <WindowState Visible="False" X="1440" Y="380" Width="70" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1918,7 +1914,7 @@
     <Input Universe="0" Channel="45"/>
    </Button>
    <Button Caption="Pubblico" ID="41" Icon="">
-    <WindowState Visible="True" X="210" Y="260" Width="90" Height="70"/>
+    <WindowState Visible="False" X="210" Y="260" Width="90" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1932,7 +1928,7 @@
     <Input Universe="0" Channel="24"/>
    </Button>
    <Button Caption="Bianco Bianco" ID="42" Icon="">
-    <WindowState Visible="True" X="210" Y="330" Width="90" Height="70"/>
+    <WindowState Visible="False" X="210" Y="330" Width="90" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1947,7 +1943,7 @@
     <Input Universe="0" Channel="39"/>
    </Button>
    <Button Caption="Chaser" ID="43" Icon="">
-    <WindowState Visible="True" X="210" Y="400" Width="90" Height="70"/>
+    <WindowState Visible="False" X="210" Y="400" Width="90" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1961,7 +1957,7 @@
     <Input Universe="0" Channel="38"/>
    </Button>
    <XYPad Caption="XY Pad" ID="44" InvertedAppearance="1">
-    <WindowState Visible="True" X="1350" Y="470" Width="285" Height="285"/>
+    <WindowState Visible="False" X="1350" Y="470" Width="285" Height="285"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1993,7 +1989,7 @@
     </Tilt>
    </XYPad>
    <Button Caption="Bianco (FLASH) - 1" ID="62" Icon="">
-    <WindowState Visible="True" X="0" Y="35" Width="95" Height="70"/>
+    <WindowState Visible="False" X="0" Y="35" Width="95" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2002,13 +1998,13 @@
      <Font>Default</Font>
     </Appearance>
     <Function ID="1"/>
-    <Action>Flash</Action>
+    <Action Override="0" ForceLTP="0">Flash</Action>
     <Key>Space</Key>
     <Intensity Adjust="False">100</Intensity>
     <Input Universe="0" Channel="28"/>
    </Button>
    <CueList Caption="Lista di azioni" ID="8">
-    <WindowState Visible="True" X="0" Y="485" Width="440" Height="375"/>
+    <WindowState Visible="False" X="0" Y="485" Width="440" Height="375"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2026,7 +2022,7 @@
     <Stop/>
    </CueList>
    <AudioTriggers BarsNumber="32" Caption="" ID="34">
-    <WindowState Visible="True" X="910" Y="25" Width="380" Height="205"/>
+    <WindowState Visible="False" X="910" Y="25" Width="380" Height="205"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2037,7 +2033,7 @@
     <SpectrumBar Name="#1 (0Hz - 156Hz)" Type="2" MinThreshold="204" MaxThreshold="211" Divisor="1" Index="0" FunctionID="1"/>
    </AudioTriggers>
    <Slider Caption="Caldo" ID="37" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="665" Y="150" Width="65" Height="325"/>
+    <WindowState Visible="False" X="665" Y="150" Width="65" Height="325"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2053,7 +2049,7 @@
     </Playback>
    </Slider>
    <Slider Caption="Naturale" ID="38" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="735" Y="150" Width="65" Height="325"/>
+    <WindowState Visible="False" X="735" Y="150" Width="65" Height="325"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2069,7 +2065,7 @@
     </Playback>
    </Slider>
    <Slider Caption="Dimmer" ID="45" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="805" Y="150" Width="65" Height="325"/>
+    <WindowState Visible="False" X="805" Y="150" Width="65" Height="325"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2086,8 +2082,6 @@
      <Channel Fixture="10">0</Channel>
      <Channel Fixture="11">0</Channel>
      <Channel Fixture="12">0</Channel>
-     <Channel Fixture="14">0</Channel>
-     <Channel Fixture="15">0</Channel>
      <Channel Fixture="17">0</Channel>
      <Channel Fixture="20">0</Channel>
      <Channel Fixture="23">0</Channel>
@@ -2117,7 +2111,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="1615" Y="275" Width="200" Height="165"/>
+    <WindowState Visible="False" X="1615" Y="275" Width="200" Height="165"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2126,7 +2120,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="Cerchio" ID="17" Icon="">
-     <WindowState Visible="True" X="5" Y="45" Width="60" Height="55"/>
+     <WindowState Visible="False" X="5" Y="45" Width="60" Height="55"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2140,7 +2134,7 @@
      <Input Universe="0" Channel="46"/>
     </Button>
     <Button Caption="Linea H" ID="18" Icon="">
-     <WindowState Visible="True" X="70" Y="45" Width="60" Height="55"/>
+     <WindowState Visible="False" X="70" Y="45" Width="60" Height="55"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2154,7 +2148,7 @@
      <Input Universe="0" Channel="47"/>
     </Button>
     <Button Caption="Linea V" ID="35" Icon="">
-     <WindowState Visible="True" X="135" Y="45" Width="60" Height="55"/>
+     <WindowState Visible="False" X="135" Y="45" Width="60" Height="55"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2168,7 +2162,7 @@
      <Input Universe="0" Channel="48"/>
     </Button>
     <Button Caption="Otto" ID="36" Icon="">
-     <WindowState Visible="True" X="5" Y="105" Width="60" Height="55"/>
+     <WindowState Visible="False" X="5" Y="105" Width="60" Height="55"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2182,7 +2176,7 @@
      <Input Universe="0" Channel="49"/>
     </Button>
     <Button Caption="Triangolo" ID="46" Icon="">
-     <WindowState Visible="True" X="70" Y="105" Width="60" Height="55"/>
+     <WindowState Visible="False" X="70" Y="105" Width="60" Height="55"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -2197,7 +2191,7 @@
     </Button>
    </SoloFrame>
    <Button Caption="Beamz prism (Chase 6)" ID="5" Icon="">
-    <WindowState Visible="True" X="1755" Y="385" Width="95" Height="70"/>
+    <WindowState Visible="False" X="1755" Y="385" Width="95" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2211,7 +2205,7 @@
     <Input Universe="0" Channel="51"/>
    </Button>
    <CueList Caption="Lista di azioni" ID="47">
-    <WindowState Visible="True" X="580" Y="490" Width="440" Height="375"/>
+    <WindowState Visible="False" X="580" Y="490" Width="440" Height="375"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2236,7 +2230,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="1150" Y="600" Width="200" Height="200"/>
+    <WindowState Visible="False" X="1150" Y="600" Width="200" Height="200"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -2245,7 +2239,7 @@
     <Disabled>False</Disabled>
    </Frame>
    <Button Caption="Even/Odd (E)" ID="49" Icon="">
-    <WindowState Visible="True" X="460" Y="500" Width="100" Height="70"/>
+    <WindowState Visible="False" X="460" Y="500" Width="100" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
