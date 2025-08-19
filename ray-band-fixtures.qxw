@@ -43,6 +43,7 @@
    <Universe>0</Universe>
    <Address>197</Address>
    <Channels>2</Channels>
+   <ForcedHTP>1</ForcedHTP>
   </Fixture>
   <Fixture>
    <Manufacturer>Varytec</Manufacturer>
@@ -499,7 +500,7 @@
    <FixtureVal ID="9">1,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255</FixtureVal>
   </Function>
   <Function ID="2" Type="RGBMatrix" Name="Astratto lento">
-   <Speed FadeIn="219" FadeOut="219" Duration="99"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="564"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -510,7 +511,7 @@
    <Property Name="presetSize" Value="8"/>
   </Function>
   <Function ID="3" Type="RGBMatrix" Name="Astratto veloce">
-   <Speed FadeIn="219" FadeOut="219" Duration="99"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="564"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -527,7 +528,7 @@
    <FixtureVal ID="2">7,0,8,0,9,0,10,0</FixtureVal>
    <FixtureVal ID="0">7,0,8,0,9,0,10,0</FixtureVal>
    <FixtureVal ID="3">2,0,3,0,4,0,5,0</FixtureVal>
-   <FixtureVal ID="7">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
    <FixtureVal ID="9">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
    <FixtureVal ID="4">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0</FixtureVal>
   </Function>
@@ -547,7 +548,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="6640"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="3320"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -583,7 +584,7 @@
     <StartOffset>70</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="6640"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="3320"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Square</Algorithm>
@@ -619,7 +620,7 @@
     <StartOffset>45</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="6640"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="3320"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -643,7 +644,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
   <Function ID="9" Type="Chaser" Name="Chaser colori">
-   <Speed FadeIn="500" FadeOut="500" Duration="99"/>
+   <Speed FadeIn="500" FadeOut="500" Duration="564"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -663,97 +664,97 @@
    <Direction>Forward</Direction>
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
-   <Step Number="0" FadeIn="0" Hold="30" FadeOut="0" Values="24">7:0,255,1,255,2,255</Step>
-   <Step Number="1" FadeIn="0" Hold="30" FadeOut="0" Values="24">7:3,255,4,255,5,255</Step>
-   <Step Number="2" FadeIn="0" Hold="30" FadeOut="0" Values="25">7:6,255,7,255,8,255</Step>
-   <Step Number="3" FadeIn="0" Hold="30" FadeOut="0" Values="27">7:9,255,10,255,11,255</Step>
-   <Step Number="4" FadeIn="0" Hold="30" FadeOut="0" Values="24">2:7,255,8,255,9,255</Step>
-   <Step Number="5" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="6" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="7" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="8" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="9" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:2,255,3,255,4,255</Step>
-   <Step Number="10" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:5,255,6,255,7,255</Step>
-   <Step Number="11" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:8,255,9,255,10,255</Step>
-   <Step Number="12" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:11,255,12,255,13,255</Step>
-   <Step Number="13" FadeIn="0" Hold="30" FadeOut="0" Values="24">0:7,255,8,255,9,255</Step>
-   <Step Number="14" FadeIn="0" Hold="30" FadeOut="0" Values="27">4:2,255,3,255,4,255</Step>
-   <Step Number="15" FadeIn="0" Hold="30" FadeOut="0" Values="27">4:5,255,6,255,7,255</Step>
-   <Step Number="16" FadeIn="0" Hold="30" FadeOut="0" Values="27">4:8,255,9,255,10,255</Step>
-   <Step Number="17" FadeIn="0" Hold="30" FadeOut="0" Values="27">4:11,255,12,255,13,255</Step>
-   <Step Number="18" FadeIn="0" Hold="30" FadeOut="0" Values="27">4:8,255,9,255,10,255</Step>
-   <Step Number="19" FadeIn="0" Hold="30" FadeOut="0" Values="27">4:5,255,6,255,7,255</Step>
-   <Step Number="20" FadeIn="0" Hold="30" FadeOut="0" Values="27">4:2,255,3,255,4,255</Step>
-   <Step Number="21" FadeIn="0" Hold="30" FadeOut="0" Values="24">0:7,255,8,255,9,255</Step>
-   <Step Number="22" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:11,255,12,255,13,255</Step>
-   <Step Number="23" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:8,255,9,255,10,255</Step>
-   <Step Number="24" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:5,255,6,255,7,255</Step>
-   <Step Number="25" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:2,255,3,255,4,255</Step>
-   <Step Number="26" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="27" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="28" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="29" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="30" FadeIn="0" Hold="30" FadeOut="0" Values="24">2:7,255,8,255,9,255</Step>
-   <Step Number="31" FadeIn="0" Hold="30" FadeOut="0" Values="27">7:9,255,10,255,11,255</Step>
-   <Step Number="32" FadeIn="0" Hold="30" FadeOut="0" Values="25">7:6,255,7,255,8,255</Step>
-   <Step Number="33" FadeIn="0" Hold="30" FadeOut="0" Values="24">7:3,255,4,255,5,255</Step>
-   <Step Number="34" FadeIn="0" Hold="30" FadeOut="0" Values="24">7:0,255,1,255,2,255</Step>
-   <Step Number="35" FadeIn="0" Hold="30" FadeOut="0" Values="24">7:3,255,4,255,5,255</Step>
-   <Step Number="36" FadeIn="0" Hold="30" FadeOut="0" Values="25">7:6,255,7,255,8,255</Step>
-   <Step Number="37" FadeIn="0" Hold="30" FadeOut="0" Values="27">7:9,255,10,255,11,255</Step>
-   <Step Number="38" FadeIn="0" Hold="30" FadeOut="0" Values="24">2:7,255,8,255,9,255</Step>
-   <Step Number="39" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="40" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="41" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="42" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="43" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:2,255,3,255,4,255</Step>
-   <Step Number="44" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:5,255,6,255,7,255</Step>
-   <Step Number="45" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:8,255,9,255,10,255</Step>
-   <Step Number="46" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:11,255,12,255,13,255</Step>
-   <Step Number="47" FadeIn="0" Hold="30" FadeOut="0" Values="24">0:7,255,8,255,9,255</Step>
-   <Step Number="48" FadeIn="0" Hold="30" FadeOut="0" Values="27">4:2,255,3,255,4,255</Step>
-   <Step Number="49" FadeIn="0" Hold="30" FadeOut="0" Values="27">4:5,255,6,255,7,255</Step>
-   <Step Number="50" FadeIn="0" Hold="30" FadeOut="0" Values="27">4:8,255,9,255,10,255</Step>
-   <Step Number="51" FadeIn="0" Hold="30" FadeOut="0" Values="27">4:11,255,12,255,13,255</Step>
-   <Step Number="52" FadeIn="0" Hold="30" FadeOut="0" Values="27">4:8,255,9,255,10,255</Step>
-   <Step Number="53" FadeIn="0" Hold="30" FadeOut="0" Values="27">4:5,255,6,255,7,255</Step>
-   <Step Number="54" FadeIn="0" Hold="30" FadeOut="0" Values="27">4:2,255,3,255,4,255</Step>
-   <Step Number="55" FadeIn="0" Hold="30" FadeOut="0" Values="24">0:7,255,8,255,9,255</Step>
-   <Step Number="56" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:11,255,12,255,13,255</Step>
-   <Step Number="57" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:8,255,9,255,10,255</Step>
-   <Step Number="58" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:5,255,6,255,7,255</Step>
-   <Step Number="59" FadeIn="0" Hold="30" FadeOut="0" Values="27">9:2,255,3,255,4,255</Step>
-   <Step Number="60" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="61" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="62" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="63" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="64" FadeIn="0" Hold="30" FadeOut="0" Values="24">2:7,255,8,255,9,255</Step>
-   <Step Number="65" FadeIn="0" Hold="30" FadeOut="0" Values="27">7:9,255,10,255,11,255</Step>
-   <Step Number="66" FadeIn="0" Hold="30" FadeOut="0" Values="25">7:6,255,7,255,8,255</Step>
-   <Step Number="67" FadeIn="0" Hold="30" FadeOut="0" Values="24">7:3,255,4,255,5,255</Step>
-   <Step Number="68" FadeIn="0" Hold="0" FadeOut="0" Values="64">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
-   <Step Number="69" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="70" FadeIn="0" Hold="0" FadeOut="0" Values="64">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
-   <Step Number="71" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="72" FadeIn="0" Hold="0" FadeOut="0" Values="64">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
-   <Step Number="73" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="74" FadeIn="0" Hold="0" FadeOut="0" Values="64">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
-   <Step Number="75" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="76" FadeIn="0" Hold="0" FadeOut="0" Values="64">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
-   <Step Number="77" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="78" FadeIn="0" Hold="0" FadeOut="0" Values="64">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
-   <Step Number="79" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="80" FadeIn="0" Hold="0" FadeOut="0" Values="64">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
-   <Step Number="81" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="82" FadeIn="0" Hold="0" FadeOut="0" Values="64">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
-   <Step Number="83" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="84" FadeIn="0" Hold="0" FadeOut="0" Values="64">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
-   <Step Number="85" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
-   <Step Number="86" FadeIn="0" Hold="0" FadeOut="0" Values="64">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
-   <Step Number="87" FadeIn="0" Hold="30" FadeOut="0" Values="24"/>
+   <Step Number="0" FadeIn="0" Hold="30" FadeOut="0" Values="52">7:0,255,1,255,2,255</Step>
+   <Step Number="1" FadeIn="0" Hold="30" FadeOut="0" Values="52">7:3,255,4,255,5,255</Step>
+   <Step Number="2" FadeIn="0" Hold="30" FadeOut="0" Values="52">7:6,255,7,255,8,255</Step>
+   <Step Number="3" FadeIn="0" Hold="30" FadeOut="0" Values="52">7:9,255,10,255,11,255</Step>
+   <Step Number="4" FadeIn="0" Hold="30" FadeOut="0" Values="52">2:7,255,8,255,9,255</Step>
+   <Step Number="5" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="6" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="7" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="8" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="9" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:2,255,3,255,4,255</Step>
+   <Step Number="10" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:5,255,6,255,7,255</Step>
+   <Step Number="11" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:8,255,9,255,10,255</Step>
+   <Step Number="12" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:11,255,12,255,13,255</Step>
+   <Step Number="13" FadeIn="0" Hold="30" FadeOut="0" Values="52">0:7,255,8,255,9,255</Step>
+   <Step Number="14" FadeIn="0" Hold="30" FadeOut="0" Values="52">4:2,255,3,255,4,255</Step>
+   <Step Number="15" FadeIn="0" Hold="30" FadeOut="0" Values="52">4:5,255,6,255,7,255</Step>
+   <Step Number="16" FadeIn="0" Hold="30" FadeOut="0" Values="52">4:8,255,9,255,10,255</Step>
+   <Step Number="17" FadeIn="0" Hold="30" FadeOut="0" Values="52">4:11,255,12,255,13,255</Step>
+   <Step Number="18" FadeIn="0" Hold="30" FadeOut="0" Values="52">4:8,255,9,255,10,255</Step>
+   <Step Number="19" FadeIn="0" Hold="30" FadeOut="0" Values="52">4:5,255,6,255,7,255</Step>
+   <Step Number="20" FadeIn="0" Hold="30" FadeOut="0" Values="52">4:2,255,3,255,4,255</Step>
+   <Step Number="21" FadeIn="0" Hold="30" FadeOut="0" Values="52">0:7,255,8,255,9,255</Step>
+   <Step Number="22" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:11,255,12,255,13,255</Step>
+   <Step Number="23" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:8,255,9,255,10,255</Step>
+   <Step Number="24" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:5,255,6,255,7,255</Step>
+   <Step Number="25" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:2,255,3,255,4,255</Step>
+   <Step Number="26" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="27" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="28" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="29" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="30" FadeIn="0" Hold="30" FadeOut="0" Values="52">2:7,255,8,255,9,255</Step>
+   <Step Number="31" FadeIn="0" Hold="30" FadeOut="0" Values="52">7:9,255,10,255,11,255</Step>
+   <Step Number="32" FadeIn="0" Hold="30" FadeOut="0" Values="52">7:6,255,7,255,8,255</Step>
+   <Step Number="33" FadeIn="0" Hold="30" FadeOut="0" Values="52">7:3,255,4,255,5,255</Step>
+   <Step Number="34" FadeIn="0" Hold="30" FadeOut="0" Values="52">7:0,255,1,255,2,255</Step>
+   <Step Number="35" FadeIn="0" Hold="30" FadeOut="0" Values="52">7:3,255,4,255,5,255</Step>
+   <Step Number="36" FadeIn="0" Hold="30" FadeOut="0" Values="52">7:6,255,7,255,8,255</Step>
+   <Step Number="37" FadeIn="0" Hold="30" FadeOut="0" Values="52">7:9,255,10,255,11,255</Step>
+   <Step Number="38" FadeIn="0" Hold="30" FadeOut="0" Values="52">2:7,255,8,255,9,255</Step>
+   <Step Number="39" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="40" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="41" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="42" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="43" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:2,255,3,255,4,255</Step>
+   <Step Number="44" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:5,255,6,255,7,255</Step>
+   <Step Number="45" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:8,255,9,255,10,255</Step>
+   <Step Number="46" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:11,255,12,255,13,255</Step>
+   <Step Number="47" FadeIn="0" Hold="30" FadeOut="0" Values="52">0:7,255,8,255,9,255</Step>
+   <Step Number="48" FadeIn="0" Hold="30" FadeOut="0" Values="52">4:2,255,3,255,4,255</Step>
+   <Step Number="49" FadeIn="0" Hold="30" FadeOut="0" Values="52">4:5,255,6,255,7,255</Step>
+   <Step Number="50" FadeIn="0" Hold="30" FadeOut="0" Values="52">4:8,255,9,255,10,255</Step>
+   <Step Number="51" FadeIn="0" Hold="30" FadeOut="0" Values="52">4:11,255,12,255,13,255</Step>
+   <Step Number="52" FadeIn="0" Hold="30" FadeOut="0" Values="52">4:8,255,9,255,10,255</Step>
+   <Step Number="53" FadeIn="0" Hold="30" FadeOut="0" Values="52">4:5,255,6,255,7,255</Step>
+   <Step Number="54" FadeIn="0" Hold="30" FadeOut="0" Values="52">4:2,255,3,255,4,255</Step>
+   <Step Number="55" FadeIn="0" Hold="30" FadeOut="0" Values="52">0:7,255,8,255,9,255</Step>
+   <Step Number="56" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:11,255,12,255,13,255</Step>
+   <Step Number="57" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:8,255,9,255,10,255</Step>
+   <Step Number="58" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:5,255,6,255,7,255</Step>
+   <Step Number="59" FadeIn="0" Hold="30" FadeOut="0" Values="52">9:2,255,3,255,4,255</Step>
+   <Step Number="60" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="61" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="62" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="63" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="64" FadeIn="0" Hold="30" FadeOut="0" Values="52">2:7,255,8,255,9,255</Step>
+   <Step Number="65" FadeIn="0" Hold="30" FadeOut="0" Values="52">7:9,255,10,255,11,255</Step>
+   <Step Number="66" FadeIn="0" Hold="30" FadeOut="0" Values="52">7:6,255,7,255,8,255</Step>
+   <Step Number="67" FadeIn="0" Hold="30" FadeOut="0" Values="52">7:3,255,4,255,5,255</Step>
+   <Step Number="68" FadeIn="0" Hold="0" FadeOut="0" Values="52">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
+   <Step Number="69" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="70" FadeIn="0" Hold="0" FadeOut="0" Values="52">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
+   <Step Number="71" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="72" FadeIn="0" Hold="0" FadeOut="0" Values="52">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
+   <Step Number="73" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="74" FadeIn="0" Hold="0" FadeOut="0" Values="52">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
+   <Step Number="75" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="76" FadeIn="0" Hold="0" FadeOut="0" Values="52">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
+   <Step Number="77" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="78" FadeIn="0" Hold="0" FadeOut="0" Values="52">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
+   <Step Number="79" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="80" FadeIn="0" Hold="0" FadeOut="0" Values="52">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
+   <Step Number="81" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="82" FadeIn="0" Hold="0" FadeOut="0" Values="52">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
+   <Step Number="83" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="84" FadeIn="0" Hold="0" FadeOut="0" Values="52">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
+   <Step Number="85" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
+   <Step Number="86" FadeIn="0" Hold="0" FadeOut="0" Values="52">0:7,255,8,255,9,255,10,255:2:7,255,8,255,9,255,10,255:3:2,255,3,255,4,255,5,255:4:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:7:0,255,1,255,2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255:9:2,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255:12:2,255,3,255,4,255,5,255</Step>
+   <Step Number="87" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
   </Function>
   <Function ID="11" Type="RGBMatrix" Name="Caldo lento">
-   <Speed FadeIn="219" FadeOut="219" Duration="99"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="564"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -764,7 +765,7 @@
    <Property Name="presetSize" Value="12"/>
   </Function>
   <Function ID="12" Type="RGBMatrix" Name="Caldo veloce">
-   <Speed FadeIn="219" FadeOut="219" Duration="99"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="564"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -775,7 +776,7 @@
    <Property Name="presetSize" Value="4"/>
   </Function>
   <Function ID="13" Type="RGBMatrix" Name="Freddo veloce">
-   <Speed FadeIn="219" FadeOut="219" Duration="99"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="564"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -786,7 +787,7 @@
    <Property Name="presetSize" Value="4"/>
   </Function>
   <Function ID="14" Type="RGBMatrix" Name="Freddo lento">
-   <Speed FadeIn="219" FadeOut="219" Duration="99"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="564"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -836,7 +837,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="6640"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="3320"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Eight</Algorithm>
@@ -872,7 +873,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="6640"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="3320"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -917,7 +918,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="6640"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="3320"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -938,7 +939,7 @@
    </Axis>
   </Function>
   <Function ID="21" Type="RGBMatrix" Name="Even/Odd" BlendMode="Mask">
-   <Speed FadeIn="1888" FadeOut="3776" Duration="396"/>
+   <Speed FadeIn="100" FadeOut="200" Duration="2256"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <Algorithm Type="Script">Even/Odd</Algorithm>
@@ -992,7 +993,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="25" Type="RGBMatrix" Name="Arcobaleno veloce">
-   <Speed FadeIn="472" FadeOut="944" Duration="99"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="564"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -1003,7 +1004,7 @@
    <Property Name="presetSize" Value="5"/>
   </Function>
   <Function ID="26" Type="RGBMatrix" Name="Azzurro ghiaccio" Path="Colori">
-   <Speed FadeIn="472" FadeOut="944" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1013,7 +1014,7 @@
    <Property Name="presetSize" Value="5"/>
   </Function>
   <Function ID="27" Type="RGBMatrix" Name="Barbie" Path="Colori">
-   <Speed FadeIn="472" FadeOut="944" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1022,7 +1023,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="28" Type="RGBMatrix" Name="Bianco (matrix)" Path="Colori">
-   <Speed FadeIn="472" FadeOut="944" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1031,7 +1032,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="29" Type="RGBMatrix" Name="Blu" Path="Colori">
-   <Speed FadeIn="472" FadeOut="944" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1040,7 +1041,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="30" Type="RGBMatrix" Name="Fucsia" Path="Colori">
-   <Speed FadeIn="472" FadeOut="944" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1049,7 +1050,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="31" Type="RGBMatrix" Name="Giallo" Path="Colori">
-   <Speed FadeIn="472" FadeOut="944" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1058,7 +1059,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="32" Type="RGBMatrix" Name="Arancione" Path="Colori">
-   <Speed FadeIn="472" FadeOut="944" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1067,7 +1068,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="33" Type="RGBMatrix" Name="Rosso" Path="Colori">
-   <Speed FadeIn="472" FadeOut="944" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1076,7 +1077,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="34" Type="RGBMatrix" Name="Verde" Path="Colori">
-   <Speed FadeIn="472" FadeOut="944" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1085,7 +1086,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="35" Type="RGBMatrix" Name="Verde acqua" Path="Colori">
-   <Speed FadeIn="472" FadeOut="944" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1094,7 +1095,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="36" Type="RGBMatrix" Name="Viola" Path="Colori">
-   <Speed FadeIn="472" FadeOut="944" Duration="38"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1103,7 +1104,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="37" Type="RGBMatrix" Name="Arcobaleno lento">
-   <Speed FadeIn="472" FadeOut="944" Duration="99"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="564"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -1148,7 +1149,7 @@
    <Step Number="19" FadeIn="0" Hold="500" FadeOut="0" Values="20">3:2,255,3,255,4,255</Step>
   </Function>
   <Function ID="40" Type="Scene" Name="Bianco (scene)">
-   <Speed FadeIn="944" FadeOut="944" Duration="0"/>
+   <Speed FadeIn="50" FadeOut="50" Duration="0"/>
    <ChannelGroupsVal>0,255,1,255,2,255,3,255</ChannelGroupsVal>
    <FixtureVal ID="0">7,255,8,255,9,255,10,255</FixtureVal>
    <FixtureVal ID="2">7,255,8,255,9,255,10,255</FixtureVal>
@@ -1188,24 +1189,24 @@
    <EndColor>4278190080</EndColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
+   <Property Name="tailfade" Value="Yes"/>
    <Property Name="direction" Value="Out"/>
    <Property Name="taillength" Value="24"/>
-   <Property Name="tailfade" Value="Yes"/>
   </Function>
   <Function ID="44" Type="RGBMatrix" Name="Random strobe">
-   <Speed FadeIn="0" FadeOut="0" Duration="49"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="282"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Lines</Algorithm>
    <MonoColor>4294967295</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="linesType" Value="Horizontal"/>
-   <Property Name="fadeMode" Value="Don't Fade"/>
-   <Property Name="linesSize" Value="1"/>
-   <Property Name="linesVariability" Value="0"/>
-   <Property Name="linesRollover" Value="No"/>
    <Property Name="linesAmount" Value="50"/>
+   <Property Name="fadeMode" Value="Don't Fade"/>
+   <Property Name="linesVariability" Value="0"/>
+   <Property Name="linesSize" Value="1"/>
+   <Property Name="linesType" Value="Horizontal"/>
+   <Property Name="linesRollover" Value="No"/>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="1">
    <Font>Arial,12,-1,0,50,0,0,0,0,0</Font>
@@ -1254,8 +1255,8 @@
      <WindowState Visible="True" X="100" Y="40" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4294967295</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1268,8 +1269,8 @@
      <WindowState Visible="True" X="5" Y="110" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4294901760</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1282,8 +1283,8 @@
      <WindowState Visible="True" X="100" Y="110" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4278255360</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1296,8 +1297,8 @@
      <WindowState Visible="True" X="5" Y="180" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4278190335</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1306,12 +1307,12 @@
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="30"/>
     </Button>
-    <Button Caption="Azzurro ghiaccio - 9" ID="3" Icon="">
+    <Button Caption="Azzurro    ghiaccio - 9" ID="3" Icon="">
      <WindowState Visible="True" X="100" Y="180" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4284855295</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1324,8 +1325,8 @@
      <WindowState Visible="True" X="5" Y="260" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4294944646</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1338,8 +1339,8 @@
      <WindowState Visible="True" X="100" Y="260" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4294921365</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1348,12 +1349,12 @@
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="21"/>
     </Button>
-    <Button Caption="Verde acqua - 6" ID="13" Icon="">
+    <Button Caption="Verde               acqua - 6" ID="13" Icon="">
      <WindowState Visible="True" X="5" Y="400" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4278255488</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1366,8 +1367,8 @@
      <WindowState Visible="True" X="5" Y="330" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4294967040</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1380,8 +1381,8 @@
      <WindowState Visible="True" X="100" Y="330" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4294944000</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1394,8 +1395,8 @@
      <WindowState Visible="True" X="100" Y="400" Width="95" Height="70"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
-      <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>Default</BackgroundColor>
+      <ForegroundColor>4278190080</ForegroundColor>
+      <BackgroundColor>4292613631</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1421,7 +1422,7 @@
     <Tap>
      <Input Universe="0" Channel="41"/>
     </Tap>
-    <Time>944</Time>
+    <Time>50</Time>
     <Key>Num+Enter</Key>
     <MultKey>Num++</MultKey>
     <DivKey>Num+-</DivKey>
@@ -1481,7 +1482,7 @@
     </Appearance>
     <Input Universe="0" Channel="0"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="0">
+    <Level LowLimit="0" HighLimit="255" Value="252">
      <Channel Fixture="0">5</Channel>
      <Channel Fixture="2">5</Channel>
     </Level>
@@ -1505,8 +1506,8 @@
      <Function>4294967295</Function>
     </Playback>
    </Slider>
-   <Slider Caption="Slider 4" ID="25" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="520" Y="150" Width="65" Height="325"/>
+   <Slider Caption="Pompa fumo" ID="25" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="515" Y="150" Width="70" Height="370"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1515,8 +1516,11 @@
      <Font>Default</Font>
     </Appearance>
     <Input Universe="0" Channel="3"/>
-    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="131" HighLimit="255" Value="131"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+    <Reset/>
+    <Level LowLimit="0" HighLimit="255" Value="0">
+     <Channel Fixture="1">0</Channel>
+    </Level>
     <Playback>
      <Function>4294967295</Function>
     </Playback>
@@ -1565,7 +1569,7 @@
     <Tap>
      <Input Universe="0" Channel="40"/>
     </Tap>
-    <Time>99</Time>
+    <Time>564</Time>
     <Key>Num+Enter</Key>
     <MultKey>Num++</MultKey>
     <DivKey>Num+-</DivKey>
@@ -1771,8 +1775,8 @@
      <Function>4294967295</Function>
     </Playback>
    </Slider>
-   <Slider Caption="Slider 5" ID="0" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="595" Y="150" Width="65" Height="325"/>
+   <Slider Caption="Ventola fumo" ID="0" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="595" Y="150" Width="65" Height="370"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1781,8 +1785,11 @@
      <Font>Default</Font>
     </Appearance>
     <Input Universe="0" Channel="4"/>
-    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
+    <Reset/>
+    <Level LowLimit="0" HighLimit="255" Value="0">
+     <Channel Fixture="1">1</Channel>
+    </Level>
     <Playback>
      <Function>4294967295</Function>
     </Playback>
@@ -1831,7 +1838,7 @@
     <Intensity Adjust="False">100</Intensity>
     <Input Universe="0" Channel="45"/>
    </Button>
-   <Button Caption="Random strobe" ID="41" Icon="">
+   <Button Caption="Random           strobe" ID="41" Icon="">
     <WindowState Visible="True" X="210" Y="260" Width="90" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
@@ -1894,16 +1901,16 @@
     <Pan Position="130">
      <Input Universe="0" Channel="10"/>
     </Pan>
-    <Tilt Position="127">
+    <Tilt Position="125">
      <Input Universe="0" Channel="11"/>
     </Tilt>
    </XYPad>
-   <Button Caption="Bianco (FLASH) - 1" ID="62" Icon="">
+   <Button Caption="Bianco       (FLASH) - 1" ID="62" Icon="">
     <WindowState Visible="True" X="0" Y="35" Width="95" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
+     <ForegroundColor>4278190080</ForegroundColor>
+     <BackgroundColor>4294967295</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
@@ -1985,7 +1992,7 @@
     </Appearance>
     <Input Universe="0" Channel="7"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="194">
+    <Level LowLimit="0" HighLimit="255" Value="78">
      <Channel Fixture="3">0</Channel>
      <Channel Fixture="4">1</Channel>
      <Channel Fixture="5">1</Channel>
@@ -2116,7 +2123,7 @@
     <Input Universe="0" Channel="51"/>
    </Button>
    <CueList Caption="Lista di azioni" ID="47">
-    <WindowState Visible="True" X="580" Y="490" Width="440" Height="375"/>
+    <WindowState Visible="True" X="540" Y="485" Width="440" Height="375"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2133,24 +2140,8 @@
     </Playback>
     <Stop/>
    </CueList>
-   <Frame Caption="" ID="48">
-    <Appearance>
-     <FrameStyle>Sunken</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-    <WindowState Visible="True" X="1150" Y="600" Width="200" Height="200"/>
-    <AllowChildren>True</AllowChildren>
-    <AllowResize>True</AllowResize>
-    <ShowHeader>True</ShowHeader>
-    <ShowEnableButton>True</ShowEnableButton>
-    <Collapsed>False</Collapsed>
-    <Disabled>False</Disabled>
-   </Frame>
    <Button Caption="Even/Odd (E)" ID="49" Icon="">
-    <WindowState Visible="True" X="460" Y="500" Width="100" Height="70"/>
+    <WindowState Visible="True" X="440" Y="495" Width="100" Height="70"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2164,7 +2155,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="TEST" ID="50" Icon="">
-    <WindowState Visible="True" X="1315" Y="30" Width="50" Height="50"/>
+    <WindowState Visible="True" X="440" Y="620" Width="100" Height="40"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2177,7 +2168,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <Button Caption="UV Teste Mobili" ID="51" Icon="">
-    <WindowState Visible="True" X="225" Y="5" Width="50" Height="50"/>
+    <WindowState Visible="True" X="440" Y="575" Width="100" Height="40"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -2199,6 +2190,36 @@
      <Font>Noto Sans,-1,28,5,75,0,0,0,0,0</Font>
     </Appearance>
    </Clock>
+   <Label Caption="CH1               CH2               CH3               CH4                CH5               CH6               CH7               CH8" ID="56">
+    <WindowState Visible="True" X="300" Y="470" Width="585" Height="25"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Label>
+   <Label Caption="--&gt;" ID="58">
+    <WindowState Visible="True" X="520" Y="350" Width="25" Height="25"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Label>
+   <Label Caption="--&gt;" ID="59">
+    <WindowState Visible="True" X="595" Y="365" Width="30" Height="25"/>
+    <Appearance>
+     <FrameStyle>None</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+   </Label>
   </Frame>
   <Properties>
    <Size Width="1864" Height="909"/>
