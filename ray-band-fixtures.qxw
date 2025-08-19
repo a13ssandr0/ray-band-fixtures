@@ -500,7 +500,7 @@
    <FixtureVal ID="9">1,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255</FixtureVal>
   </Function>
   <Function ID="2" Type="RGBMatrix" Name="Astratto lento">
-   <Speed FadeIn="219" FadeOut="219" Duration="522"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="50"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -511,7 +511,7 @@
    <Property Name="presetSize" Value="8"/>
   </Function>
   <Function ID="3" Type="RGBMatrix" Name="Astratto veloce">
-   <Speed FadeIn="219" FadeOut="219" Duration="522"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="50"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -548,7 +548,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="3320"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="6640"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -584,7 +584,7 @@
     <StartOffset>70</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="3320"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="6640"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Square</Algorithm>
@@ -620,7 +620,7 @@
     <StartOffset>45</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="3320"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="6640"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -644,7 +644,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
   <Function ID="9" Type="Chaser" Name="Chaser colori">
-   <Speed FadeIn="500" FadeOut="500" Duration="522"/>
+   <Speed FadeIn="500" FadeOut="500" Duration="50"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -754,7 +754,7 @@
    <Step Number="87" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
   </Function>
   <Function ID="11" Type="RGBMatrix" Name="Caldo lento">
-   <Speed FadeIn="219" FadeOut="219" Duration="522"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="50"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -765,7 +765,7 @@
    <Property Name="presetSize" Value="12"/>
   </Function>
   <Function ID="12" Type="RGBMatrix" Name="Caldo veloce">
-   <Speed FadeIn="219" FadeOut="219" Duration="522"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="50"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -776,7 +776,7 @@
    <Property Name="presetSize" Value="4"/>
   </Function>
   <Function ID="13" Type="RGBMatrix" Name="Freddo veloce">
-   <Speed FadeIn="219" FadeOut="219" Duration="522"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="50"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -787,7 +787,7 @@
    <Property Name="presetSize" Value="4"/>
   </Function>
   <Function ID="14" Type="RGBMatrix" Name="Freddo lento">
-   <Speed FadeIn="219" FadeOut="219" Duration="522"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="50"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -837,7 +837,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="3320"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="6640"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Eight</Algorithm>
@@ -873,7 +873,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="3320"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="6640"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Line</Algorithm>
@@ -918,7 +918,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="0" FadeOut="0" Duration="3320"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="6640"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -939,7 +939,7 @@
    </Axis>
   </Function>
   <Function ID="21" Type="RGBMatrix" Name="Even/Odd" BlendMode="Mask">
-   <Speed FadeIn="100" FadeOut="200" Duration="2088"/>
+   <Speed FadeIn="100" FadeOut="200" Duration="200"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <Algorithm Type="Script">Even/Odd</Algorithm>
@@ -993,7 +993,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="25" Type="RGBMatrix" Name="Arcobaleno veloce">
-   <Speed FadeIn="25" FadeOut="50" Duration="522"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="50"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -1104,7 +1104,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="37" Type="RGBMatrix" Name="Arcobaleno lento">
-   <Speed FadeIn="25" FadeOut="50" Duration="522"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="50"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -1194,7 +1194,7 @@
    <Property Name="taillength" Value="24"/>
   </Function>
   <Function ID="44" Type="RGBMatrix" Name="Random strobe">
-   <Speed FadeIn="0" FadeOut="0" Duration="261"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="50"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Lines</Algorithm>
@@ -1472,7 +1472,7 @@
     <Input Universe="0" Channel="60"/>
    </Button>
    <Slider Caption="Dimmer T. Mob" ID="9" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="310" Y="150" Width="65" Height="325"/>
+    <WindowState Visible="True" X="380" Y="150" Width="65" Height="325"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1480,9 +1480,9 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Input Universe="0" Channel="0"/>
+    <Input Universe="0" Channel="1"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="6">
+    <Level LowLimit="0" HighLimit="255" Value="252">
      <Channel Fixture="0">5</Channel>
      <Channel Fixture="2">5</Channel>
     </Level>
@@ -1490,8 +1490,8 @@
      <Function>4294967295</Function>
     </Playback>
    </Slider>
-   <Slider Caption="Slider 3" ID="24" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="450" Y="150" Width="65" Height="325"/>
+   <Slider Caption="Slider 8" ID="24" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="805" Y="150" Width="65" Height="325"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1499,7 +1499,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Input Universe="0" Channel="2"/>
+    <Input Universe="0" Channel="7"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
     <Level LowLimit="0" HighLimit="255" Value="0"/>
     <Playback>
@@ -1569,11 +1569,11 @@
     <Tap>
      <Input Universe="0" Channel="40"/>
     </Tap>
-    <Time>522</Time>
+    <Time>50</Time>
     <Key>Num+Enter</Key>
     <MultKey>Num++</MultKey>
     <DivKey>Num+-</DivKey>
-    <Function FadeIn="0" FadeOut="0" Duration="5">44</Function>
+    <Function FadeIn="0" FadeOut="0" Duration="6">44</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">13</Function>
     <Function FadeIn="0" FadeOut="0" Duration="6">14</Function>
     <Function FadeIn="0" FadeOut="0" Duration="8">21</Function>
@@ -1757,7 +1757,7 @@
     </Button>
    </SoloFrame>
    <Slider Caption="Strobo T. Mob" ID="23" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="380" Y="150" Width="65" Height="325"/>
+    <WindowState Visible="True" X="450" Y="150" Width="65" Height="325"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1765,7 +1765,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Input Universe="0" Channel="1"/>
+    <Input Universe="0" Channel="2"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
     <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="0">6</Channel>
@@ -1981,8 +1981,8 @@
      <Function>16</Function>
     </Playback>
    </Slider>
-   <Slider Caption="Dimmer" ID="45" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="805" Y="150" Width="65" Height="325"/>
+   <Slider Caption="Dimmer americana" ID="45" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="True" X="310" Y="150" Width="65" Height="325"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1990,9 +1990,9 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <Input Universe="0" Channel="7"/>
+    <Input Universe="0" Channel="0"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="134">
+    <Level LowLimit="0" HighLimit="255" Value="252">
      <Channel Fixture="3">0</Channel>
      <Channel Fixture="4">1</Channel>
      <Channel Fixture="5">1</Channel>
@@ -2201,7 +2201,7 @@
     </Appearance>
    </Label>
    <Label Caption="--&gt;" ID="58">
-    <WindowState Visible="True" X="520" Y="360" Width="25" Height="25"/>
+    <WindowState Visible="True" X="520" Y="355" Width="25" Height="20"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
