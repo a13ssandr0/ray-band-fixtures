@@ -500,7 +500,7 @@
    <FixtureVal ID="9">1,255,3,255,4,255,5,255,6,255,7,255,8,255,9,255,10,255,11,255,12,255,13,255,14,255</FixtureVal>
   </Function>
   <Function ID="2" Type="RGBMatrix" Name="Astratto lento">
-   <Speed FadeIn="219" FadeOut="219" Duration="564"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="522"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -511,7 +511,7 @@
    <Property Name="presetSize" Value="8"/>
   </Function>
   <Function ID="3" Type="RGBMatrix" Name="Astratto veloce">
-   <Speed FadeIn="219" FadeOut="219" Duration="564"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="522"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -644,7 +644,7 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
   </Function>
   <Function ID="9" Type="Chaser" Name="Chaser colori">
-   <Speed FadeIn="500" FadeOut="500" Duration="564"/>
+   <Speed FadeIn="500" FadeOut="500" Duration="522"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
@@ -754,7 +754,7 @@
    <Step Number="87" FadeIn="0" Hold="30" FadeOut="0" Values="52"/>
   </Function>
   <Function ID="11" Type="RGBMatrix" Name="Caldo lento">
-   <Speed FadeIn="219" FadeOut="219" Duration="564"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="522"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -765,7 +765,7 @@
    <Property Name="presetSize" Value="12"/>
   </Function>
   <Function ID="12" Type="RGBMatrix" Name="Caldo veloce">
-   <Speed FadeIn="219" FadeOut="219" Duration="564"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="522"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -776,7 +776,7 @@
    <Property Name="presetSize" Value="4"/>
   </Function>
   <Function ID="13" Type="RGBMatrix" Name="Freddo veloce">
-   <Speed FadeIn="219" FadeOut="219" Duration="564"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="522"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -787,7 +787,7 @@
    <Property Name="presetSize" Value="4"/>
   </Function>
   <Function ID="14" Type="RGBMatrix" Name="Freddo lento">
-   <Speed FadeIn="219" FadeOut="219" Duration="564"/>
+   <Speed FadeIn="219" FadeOut="219" Duration="522"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -939,7 +939,7 @@
    </Axis>
   </Function>
   <Function ID="21" Type="RGBMatrix" Name="Even/Odd" BlendMode="Mask">
-   <Speed FadeIn="100" FadeOut="200" Duration="2256"/>
+   <Speed FadeIn="100" FadeOut="200" Duration="2088"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <Algorithm Type="Script">Even/Odd</Algorithm>
@@ -993,7 +993,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="25" Type="RGBMatrix" Name="Arcobaleno veloce">
-   <Speed FadeIn="25" FadeOut="50" Duration="564"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="522"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -1104,7 +1104,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="37" Type="RGBMatrix" Name="Arcobaleno lento">
-   <Speed FadeIn="25" FadeOut="50" Duration="564"/>
+   <Speed FadeIn="25" FadeOut="50" Duration="522"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -1194,7 +1194,7 @@
    <Property Name="taillength" Value="24"/>
   </Function>
   <Function ID="44" Type="RGBMatrix" Name="Random strobe">
-   <Speed FadeIn="0" FadeOut="0" Duration="282"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="261"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Lines</Algorithm>
@@ -1482,7 +1482,7 @@
     </Appearance>
     <Input Universe="0" Channel="0"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="252">
+    <Level LowLimit="0" HighLimit="255" Value="6">
      <Channel Fixture="0">5</Channel>
      <Channel Fixture="2">5</Channel>
     </Level>
@@ -1507,7 +1507,7 @@
     </Playback>
    </Slider>
    <Slider Caption="Pompa fumo" ID="25" WidgetStyle="Slider" InvertedAppearance="false">
-    <WindowState Visible="True" X="515" Y="150" Width="70" Height="370"/>
+    <WindowState Visible="True" X="520" Y="150" Width="70" Height="370"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -1569,7 +1569,7 @@
     <Tap>
      <Input Universe="0" Channel="40"/>
     </Tap>
-    <Time>564</Time>
+    <Time>522</Time>
     <Key>Num+Enter</Key>
     <MultKey>Num++</MultKey>
     <DivKey>Num+-</DivKey>
@@ -1992,7 +1992,7 @@
     </Appearance>
     <Input Universe="0" Channel="7"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="78">
+    <Level LowLimit="0" HighLimit="255" Value="134">
      <Channel Fixture="3">0</Channel>
      <Channel Fixture="4">1</Channel>
      <Channel Fixture="5">1</Channel>
@@ -2201,17 +2201,7 @@
     </Appearance>
    </Label>
    <Label Caption="--&gt;" ID="58">
-    <WindowState Visible="True" X="520" Y="350" Width="25" Height="25"/>
-    <Appearance>
-     <FrameStyle>None</FrameStyle>
-     <ForegroundColor>Default</ForegroundColor>
-     <BackgroundColor>Default</BackgroundColor>
-     <BackgroundImage>None</BackgroundImage>
-     <Font>Default</Font>
-    </Appearance>
-   </Label>
-   <Label Caption="--&gt;" ID="59">
-    <WindowState Visible="True" X="595" Y="365" Width="30" Height="25"/>
+    <WindowState Visible="True" X="520" Y="360" Width="25" Height="25"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
