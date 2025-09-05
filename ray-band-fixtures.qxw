@@ -953,7 +953,7 @@
    </Axis>
   </Function>
   <Function ID="21" Type="RGBMatrix" Name="Even/Odd" BlendMode="Mask">
-   <Speed FadeIn="100" FadeOut="200" Duration="200"/>
+   <Speed FadeIn="352" FadeOut="704" Duration="200"/>
    <Direction>Forward</Direction>
    <RunOrder>PingPong</RunOrder>
    <Algorithm Type="Script">Even/Odd</Algorithm>
@@ -1007,7 +1007,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="25" Type="RGBMatrix" Name="Arcobaleno veloce">
-   <Speed FadeIn="25" FadeOut="50" Duration="50"/>
+   <Speed FadeIn="88" FadeOut="176" Duration="50"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -1018,7 +1018,7 @@
    <Property Name="presetSize" Value="5"/>
   </Function>
   <Function ID="26" Type="RGBMatrix" Name="Azzurro ghiaccio" Path="Colori">
-   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
+   <Speed FadeIn="88" FadeOut="176" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1028,7 +1028,7 @@
    <Property Name="presetSize" Value="5"/>
   </Function>
   <Function ID="27" Type="RGBMatrix" Name="Barbie" Path="Colori">
-   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
+   <Speed FadeIn="88" FadeOut="176" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1037,7 +1037,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="28" Type="RGBMatrix" Name="Bianco (matrix)" Path="Colori">
-   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
+   <Speed FadeIn="88" FadeOut="176" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1046,7 +1046,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="29" Type="RGBMatrix" Name="Blu" Path="Colori">
-   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
+   <Speed FadeIn="88" FadeOut="176" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1055,7 +1055,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="30" Type="RGBMatrix" Name="Fucsia" Path="Colori">
-   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
+   <Speed FadeIn="88" FadeOut="176" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1064,7 +1064,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="31" Type="RGBMatrix" Name="Giallo" Path="Colori">
-   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
+   <Speed FadeIn="88" FadeOut="176" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1073,7 +1073,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="32" Type="RGBMatrix" Name="Arancione" Path="Colori">
-   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
+   <Speed FadeIn="88" FadeOut="176" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1082,7 +1082,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="33" Type="RGBMatrix" Name="Rosso" Path="Colori">
-   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
+   <Speed FadeIn="88" FadeOut="176" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1091,7 +1091,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="34" Type="RGBMatrix" Name="Verde" Path="Colori">
-   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
+   <Speed FadeIn="88" FadeOut="176" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1100,7 +1100,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="35" Type="RGBMatrix" Name="Verde acqua" Path="Colori">
-   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
+   <Speed FadeIn="88" FadeOut="176" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1109,7 +1109,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="36" Type="RGBMatrix" Name="Viola" Path="Colori">
-   <Speed FadeIn="25" FadeOut="50" Duration="38"/>
+   <Speed FadeIn="88" FadeOut="176" Duration="38"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Plain"/>
@@ -1118,7 +1118,7 @@
    <FixtureGroup>1</FixtureGroup>
   </Function>
   <Function ID="37" Type="RGBMatrix" Name="Arcobaleno lento">
-   <Speed FadeIn="25" FadeOut="50" Duration="50"/>
+   <Speed FadeIn="88" FadeOut="176" Duration="50"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm Type="Script">Gradient</Algorithm>
@@ -1163,7 +1163,7 @@
    <Step Number="19" FadeIn="0" Hold="500" FadeOut="0" Values="20">3:2,255,3,255,4,255</Step>
   </Function>
   <Function ID="40" Type="Scene" Name="Bianco (scene)">
-   <Speed FadeIn="50" FadeOut="50" Duration="0"/>
+   <Speed FadeIn="176" FadeOut="176" Duration="0"/>
    <ChannelGroupsVal>0,255,1,255,2,255,3,255</ChannelGroupsVal>
    <FixtureVal ID="0">7,255,8,255,9,255,10,255</FixtureVal>
    <FixtureVal ID="2">7,255,8,255,9,255,10,255</FixtureVal>
@@ -1204,8 +1204,8 @@
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
    <Property Name="tailfade" Value="Yes"/>
-   <Property Name="direction" Value="Out"/>
    <Property Name="taillength" Value="24"/>
+   <Property Name="direction" Value="Out"/>
   </Function>
   <Function ID="44" Type="RGBMatrix" Name="Random strobe">
    <Speed FadeIn="0" FadeOut="0" Duration="50"/>
@@ -1215,12 +1215,12 @@
    <MonoColor>4294967295</MonoColor>
    <ControlMode>RGB</ControlMode>
    <FixtureGroup>1</FixtureGroup>
-   <Property Name="fadeMode" Value="Don't Fade"/>
-   <Property Name="linesAmount" Value="50"/>
    <Property Name="linesType" Value="Horizontal"/>
+   <Property Name="fadeMode" Value="Don't Fade"/>
    <Property Name="linesVariability" Value="0"/>
    <Property Name="linesSize" Value="1"/>
    <Property Name="linesRollover" Value="No"/>
+   <Property Name="linesAmount" Value="50"/>
   </Function>
   <Function ID="45" Type="Scene" Name="Bianco FULL (Fast)">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1489,7 +1489,7 @@
     <Tap>
      <Input Universe="0" Channel="41"/>
     </Tap>
-    <Time>50</Time>
+    <Time>176</Time>
     <Function FadeIn="5" FadeOut="6" Duration="0">36</Function>
     <Function FadeIn="5" FadeOut="6" Duration="0">35</Function>
     <Function FadeIn="5" FadeOut="6" Duration="0">34</Function>
@@ -1545,7 +1545,7 @@
     </Appearance>
     <Input Universe="0" Channel="1"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="255">
+    <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="0">5</Channel>
      <Channel Fixture="2">5</Channel>
     </Level>
@@ -1564,7 +1564,7 @@
     </Appearance>
     <Input Universe="0" Channel="7"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="0">
+    <Level LowLimit="0" HighLimit="255" Value="8">
      <Channel Fixture="10">5</Channel>
     </Level>
     <Playback>
@@ -1951,13 +1951,13 @@
      <Font>Default</Font>
     </Appearance>
     <Fixture ID="10" Head="0">
-     <Axis ID="X" LowLimit="0.313725" HighLimit="0.686275" Reverse="False"/>
-     <Axis ID="Y" LowLimit="0" HighLimit="0.392157" Reverse="False"/>
+     <Axis ID="X" LowLimit="0.314286" HighLimit="0.685714" Reverse="False"/>
+     <Axis ID="Y" LowLimit="0" HighLimit="0.392593" Reverse="True"/>
     </Fixture>
-    <Pan Position="59">
+    <Pan Position="128">
      <Input Universe="0" Channel="10"/>
     </Pan>
-    <Tilt Position="112">
+    <Tilt Position="130">
      <Input Universe="0" Channel="11"/>
     </Tilt>
    </XYPad>
@@ -2036,7 +2036,7 @@
     </Appearance>
     <Input Universe="0" Channel="0"/>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="false">Level</SliderMode>
-    <Level LowLimit="0" HighLimit="255" Value="255">
+    <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="3">0</Channel>
      <Channel Fixture="4">1</Channel>
      <Channel Fixture="5">1</Channel>
@@ -2304,7 +2304,7 @@
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>4294901760</ForegroundColor>
-     <BackgroundColor>4278190080</BackgroundColor>
+     <BackgroundColor>4294967295</BackgroundColor>
      <BackgroundImage>None</BackgroundImage>
      <Font>Noto Sans,12,-1,5,75,0,0,0,0,0</Font>
     </Appearance>
