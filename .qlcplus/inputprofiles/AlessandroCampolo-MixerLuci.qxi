@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE InputProfile>
+<InputProfile xmlns="http://www.qlcplus.org/InputProfile">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.14.3</Version>
+  <Author>Alessandro Campolo</Author>
+ </Creator>
+ <Manufacturer>Alessandro Campolo</Manufacturer>
+ <Model>Mixer Luci</Model>
+ <Type>MIDI</Type>
+ <Channel Number="0">
+  <Name>Slider 1</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="1">
+  <Name>Slider 2</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="2">
+  <Name>Slider 3</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="3">
+  <Name>Slider 4</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="4">
+  <Name>Slider 5</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="5">
+  <Name>Slider 6</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="6">
+  <Name>Slider 7</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="7">
+  <Name>Slider 8</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="8">
+  <Name>Speed</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="9">
+  <Name>Fade time</Name>
+  <Type>Slider</Type>
+ </Channel>
+ <Channel Number="10">
+  <Name>Joystick X</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="11">
+  <Name>Joystick Y</Name>
+  <Type>Knob</Type>
+ </Channel>
+ <Channel Number="20">
+  <Name>Scene 1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="21">
+  <Name>Scene 2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="22">
+  <Name>Scene 3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="23">
+  <Name>Scene 4</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="24">
+  <Name>Scene 5</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="25">
+  <Name>Scene 6</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="26">
+  <Name>Scene 7</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="27">
+  <Name>Scene 8</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="28">
+  <Name>Fine</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="29">
+  <Name>Mode</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="30">
+  <Name>Chase 1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="31">
+  <Name>Chase 2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="32">
+  <Name>Chase 3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="33">
+  <Name>Chase 4</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="34">
+  <Name>Chase 5</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="35">
+  <Name>Chase 6</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="36">
+  <Name>Bank UP</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="37">
+  <Name>Bank DN</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="38">
+  <Name>Program</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="39">
+  <Name>MIDI/Rec</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="40">
+  <Name>Auto/Del</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="41">
+  <Name>Music/Bank copy</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="42">
+  <Name>Tap/Display</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="43">
+  <Name>Blackout</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="44">
+  <Name>Fixture 1</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="45">
+  <Name>Fixture 2</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="46">
+  <Name>Fixture 3</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="47">
+  <Name>Fixture 4</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="48">
+  <Name>Fixture 5</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="49">
+  <Name>Fixture 6</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="50">
+  <Name>Fixture 7</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="51">
+  <Name>Fixture 8</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="52">
+  <Name>Fixture 9</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="53">
+  <Name>Fixture 10</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="54">
+  <Name>Fixture 11</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="55">
+  <Name>Fixture 12</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="56">
+  <Name>Page select</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="57">
+  <Name>Override</Name>
+  <Type>Button</Type>
+ </Channel>
+ <Channel Number="60">
+  <Name>Fog machine</Name>
+  <Type>Button</Type>
+ </Channel>
+</InputProfile>
